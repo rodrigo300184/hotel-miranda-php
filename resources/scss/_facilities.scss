@@ -1,0 +1,102 @@
+.facilities {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 60px 24px;
+  &--dark {
+    padding-top: 48px;
+    background-color: $black;
+  }
+}
+
+.facilities-subtitle {
+  text-align: center;
+  color: $grey;
+  margin-bottom: 24px;
+  &--dark {
+    color: $white;
+  }
+}
+
+.feature {
+  height: 360px;
+  width: 100%;
+  max-width: 450px;
+  text-align: start;
+  padding: 81px 38px;
+  position: relative;
+  padding-bottom: 0px;
+
+  &_icon {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 38px;
+    position: relative;
+    &--one {
+      background-image: url("../icons/features/have-high-rating.svg");
+    }
+    &--two {
+      background-image: url("../icons/features/quiet-hours.svg");
+    }
+    &--three {
+      background-image: url("../icons/features/best-locations.svg");
+    }
+    &--four {
+      background-image: url("../icons/features/free-cancelation.svg");
+    }
+    &--five {
+      background-image: url("../icons/features/payment-options.svg");
+    }
+    &--six {
+      background-image: url("../icons/features/special-offers.svg");
+    }
+  }
+  &_number {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 130px;
+    color: rgba(34, 34, 34, 0.04);
+    font-family: $archivo-font;
+    position: absolute;
+    right: 32px;
+    top: 0;
+    &--dark {
+      color: $black;
+      font-family: $archivo-font;
+      font-size: 120px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130px; 
+    }
+  }
+  &_title {
+    margin-bottom: 28px;
+    &--dark {
+      color:$white;
+    }
+  }
+  &_p {
+    font-family: $archivo-font;
+    color: $grey;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    &--dark {
+      color:$white;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .feature {
+    &_title {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    &_number {
+      font-size: 110px;
+    }
+  }
+}

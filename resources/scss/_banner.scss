@@ -1,0 +1,26 @@
+.banner {
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  top: 70px;
+  padding-left: 20px;
+  padding-bottom: 76px;
+  background-color: $banner-background-color;
+}
+
+.banner-subtitle {
+  padding: 75px 118px 40px 0px;
+  &-pages{
+    padding-bottom: 16px;
+  }
+}
+.banner-main-title {
+  padding: 0px 41px 40px 0px;
+}
+
+.banner_button-container {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+

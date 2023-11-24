@@ -1,0 +1,297 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('room_details', 'Room Details'); ?>
+
+<?php $this->startSection('content'); ?>
+
+<!-- Banner Section -->
+<section class="banner">
+ <h2 class="banner-subtitle banner-subtitle-pages subtitle">
+ THE ULTIMATE LUXURY
+ </h2>
+ <h1 class="banner-main-title main-title main-title-white about-title rooms-main-title">
+ Ultimate Room
+ </h1>
+ <div class="breadcrumb">
+ <a href="./index.php" class="a breadcrumb_a">Home</a><span class="breadcrumb_line">|</span><span class="breadcrumb_current">Room Details</span>
+ </div>
+</section>
+<!-- Rooms Sections -->
+<section class="rooms-details">
+ <div class="rooms-details-container">
+ <h2 class="subtitle room-details-subtitle">DOUBLE BED</h2>
+ <h1 class="room-luxury-title">Luxury Double Bed</h1>
+ <div class="room-price room-price-left">
+ <span class="room-price-value"> $345</span>
+ <span class="room-price-nigth">/Night</span>
+ </div>
+ <img class="room_image" src="./resources/assets/rooms/room1.jpg" alt="room" />
+ </div>
+ <!-- Availability -->
+ <div class="availability--white">
+ <h2 class="availability-title">Check Availability</h2>
+ <form class="availability_form" id="availabilityForm">
+ <label class="label-text label-text--black" for="checkIn"
+ >Check In</label
+ >
+ <input
+ class="availability_input_rdetails"
+ type="date"
+ name="checkIn"
+ id="detailsCheckIn"
+ value="<?php echo date('Y-m-d'); ?>"
+ />
+ <label class="label-text label-text--black" for="checkIn"
+ >Check Out</label
+ >
+ <input
+ class="availability_input_rdetails"
+ type="date"
+ name="checkOut"
+ id="detailsCheckOut"
+ value="<?php echo date('Y-m-d'); ?>"
+ />
+ <label class="label-text label-text--black" for="checkIn"
+ >Full Name</label
+ >
+ <input
+ class="availability_input_rdetails"
+ type="text"
+ name="fullName"
+ id="detailsFullName"
+ placeholder="Type your name..."
+ />
+ <label class="label-text label-text--black" for="checkIn"
+ >Email</label
+ >
+ <input
+ class="availability_input_rdetails"
+ type="email"
+ name="email"
+ id="detailsEmail"
+ placeholder="Type your email..."
+ />
+ <label class="label-text label-text--black" for="checkIn"
+ >Phone</label
+ >
+ <input
+ class="availability_input_rdetails"
+ type="text"
+ name="phone"
+ id="detailsPhone"
+ placeholder="Type your phone..."
+ />
+ <label class="label-text label-text--black" for="checkIn"
+ >Message (Special resquest)</label
+ >
+ <textarea
+ class="availability_text-area"
+ name="message"
+ id="detailsMessage"
+ cols="30"
+ rows="3"
+ placeholder="Type your message..."
+ ></textarea>
+ <input
+ class="button button_big button_big--gold button_text"
+ type="submit"
+ value="CHECK AVAILABILITY"
+ />
+ </form>
+ </div>
+ <!-- <section class="pageDetailsAvailability">
+ <h3 class="pageDetailsAvailability__title">Check Availability</h3>
+ <div class="pageDetailsAvailability__formContainer">
+ <p
+ class="pageDetailsAvailability__formErrorMessage"
+ id="formErrorMessage"
+ >
+ Please, check the remark fields
+ </p>
+ 
+ <div
+ class="pageDetailsAvailability__modalContainer pageDetailsAvailability__modalContainer-hidden"
+ id="availabilityModal"
+ >
+ <div class="pageDetailsAvailability__modal">
+ <h2 class="pageDetailsAvailability__modal__title">
+ ¡Thank you for your request!
+ </h2>
+ <p class="pageDetailsAvailability__modal__text">
+ We have received it correctly. <br />
+ Someone from our Team will get <br />
+ back to you very soon.
+ </p>
+ <button
+ class="utton button_big button_big--gold button_big--centered button_text"
+ id="modalBtn"
+ >
+ ACEPT
+ </button>
+ </div>
+ </div>
+ </div>
+ </section> -->
+ <p class="room-details-paragraph">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+ veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+ commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+ velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+ occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+ mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+ error sit voluptatem accusantium doloremque laudantium, totam rem
+ aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+ beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+ voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+ dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+ est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+ sed quia non numquam eius modi tempora incidunt ut labore et dolore
+ magnam aliquam quaerat voluptatem.
+ </p>
+ <!-- Amenities Section-->
+ <section class="room-details-amenities">
+ <h2 class="third-subtitle">Amenities</h2>
+ <div class="room-details-bar"></div>
+ <div class="amenities-container">
+ <div class="amenities-inner-container">
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-ac"></div>
+ <div class="amenities-text">Air conditioner</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-breakfast"></div>
+ <div class="amenities-text">Breakfast</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-cleaning"></div>
+ <div class="amenities-text">Cleaning</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-grocery"></div>
+ <div class="amenities-text">Grocery</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-shop"></div>
+ <div class="amenities-text">Shop near</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-support"></div>
+ <div class="amenities-text">24/7 Online Support</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-security"></div>
+ <div class="amenities-text">Smart Security</div>
+ </div>
+ </div>
+ <div class="amenities-inner-container">
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-wifi"></div>
+ <div class="amenities-text">High speed WiFi</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-kitchen"></div>
+ <div class="amenities-text">Kitchen</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-shower"></div>
+ <div class="amenities-text">Shower</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-bed"></div>
+ <div class="amenities-text">Single bed</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-towels"></div>
+ <div class="amenities-text">Towels</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-locker"></div>
+ <div class="amenities-text">Strong Locker</div>
+ </div>
+ <div class="amenities-item">
+ <div class="amenities-icon amenities-icon-expert"></div>
+ <div class="amenities-text">Expert Team</div>
+ </div>
+ </div>
+ </div>
+ </section>
+ <!-- Founder Section -->
+ <section class="founder-card">
+ <div class="founder-card-avatar">
+ <img class="founder-card-avatar-circle" src="./resources/icons/avatars/gold_ellipse.svg" alt="" />
+ <img class="founder-card-avatar-checkmark" src="./resources/icons/avatars/check_mark_icon.svg" alt="" />
+ </div>
+ <h2 class="third-subtitle">Rodrigo E. Martinez</h2>
+ <h3 class="subtitle room-details-subtitle room-details-subtitle--gold">
+ FOUNDER, QUX CO.
+ </h3>
+ <p class="room-details-paragraph room-details-paragraph-founder">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+ eiusmod tempor incididunt ut labore et dolore.
+ </p>
+ </section>
+ <section class="cancellation">
+ <h2 class="third-subtitle">Cancellation</h2>
+ <div class="room-details-bar"></div>
+ <p class="room-details-paragraph">
+ Phasellus volutpat neque a tellus venenatis, a euismod augue
+ facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus.
+ Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to
+ get a full refund.
+ </p>
+ </section>
+ <section class="related-rooms">
+ <h2 class="third-subtitle">Related Rooms</h2>
+ <div class="room-details-bar"></div>
+ <section>
+ <div class="room_amenities room_amenities--down">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
+ </div>
+ <div class="swiper rooms-swiper">
+ <div class="swiper-wrapper">
+ <div class="swiper-slide swiper-slide-room">
+ <img src="./resources/assets/rooms/room1.jpg" alt="room" />
+ </div>
+ <div class="swiper-slide swiper-slide-room">
+ <img src="./resources/assets/rooms/room2.jpg" alt="room" />
+ </div>
+ <div class="swiper-slide swiper-slide-room">
+ <img src="./resources/assets/rooms/room3.jpg" alt="room" />
+ </div>
+ </div>
+ <!-- If we need pagination -->
+ <div class="swiper-pagination pagination-swiper"></div>
+ <!-- If we need navigation buttons -->
+ <div class="swiper-btn-prev"></div>
+ <div class="swiper-btn-next"></div>
+ <!-- If we need scrollbar -->
+ <div class="swiper-scrollbar"></div>
+ </div>
+ <div class="room-container room-container--related">
+ <div class="room-name">
+ <h4 class="third-subtitle room-subtitle-related">
+ Minimal Duplex Room
+ </h4>
+ <p class="room-description">
+ Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
+ do eiusmod tempor.
+ </p>
+ <div class="room-price">
+ <span class="room-price-related"> $345</span>
+ <span class="room-price-related">/Night</span>
+ <a href="./room_details.php" class="room-booking-now">Booking Now</a>
+ </div>
+ </div>
+ </div>
+ </section>
+ </section>
+</section>
+
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

@@ -1,0 +1,5 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=http://rodrigo300184-photo-app-bucket2.s3-website.eu-west-3.amazonaws.com/search
+HostUrl=http://rodrigo300184-photo-app-bucket2.s3-website.eu-west-3.amazonaws.com/
+LastWriterPackageFamilyName=Microsoft.Windows.Photos_8wekyb3d8bbwe

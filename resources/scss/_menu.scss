@@ -1,0 +1,67 @@
+.menu {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 115px 20px 60px 20px;
+  overflow: hidden;
+
+  &-icon {
+    position: absolute;
+    top: -115px;
+    right: -33.5px;
+    width: 114.5px;
+    height: 114.5px;
+  }
+  &-title {
+    margin-bottom: 32px;
+  }
+
+  &-subtitle {
+    color: $grey;
+    margin-bottom: 24px;
+  }
+  &-swiper-container {
+    position: relative;
+  }
+  &-container {
+    display: flex;
+    gap: 29px;
+    width: 100%;
+    max-width: 335px;
+    min-height: 120px;
+  }
+  &-food-title {
+    font-size: 24px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 185px;
+  }
+  &-food-paragraph {
+    color: $black;
+    font-family: $roboto-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 360px) {
+  .menu {
+    &-food-title {
+      font-size: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 140px;
+    }
+    &-food-paragraph {
+      font-size: 10px;
+    }
+  }
+}

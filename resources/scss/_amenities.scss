@@ -1,0 +1,89 @@
+.amenities {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0px 20px;
+  &_container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      height: 158px;
+      width: 158px;
+
+      &-breakfast {
+        height: 58px;
+        width: 50px;
+      }
+      &-pickup {
+        padding-top: 10px;
+        height: 58px;
+        width: 50px;
+        color: $gold;
+      }
+      &-guide {
+        height: 58px;
+        width: 50px;
+      }
+      &-bbq{
+        height: 58px;
+        width: 50px;
+      }
+      &-luxury {
+        height: 58px;
+        width: 50px;
+      }
+      &-text {
+        color: $black;
+        text-align: center;
+        font-family: $archivo-font;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 2.4px;
+      }
+      &:hover {
+        background-color: $gold;
+        .amenities_container_item-breakfast {
+          filter: brightness(100);
+        }
+        .amenities_container_item-pickup {
+          padding-top: 10px;
+          filter: brightness(100);
+        }
+        .amenities_container_item-guide {
+          filter: brightness(100);
+        }
+        .amenities_container_item-luxury {
+          filter: brightness(100);
+        }
+        .amenities_container_item-text {
+          color: $white;
+         
+        }
+      }
+    }
+  }
+}
+.bbq--off{
+  display: none;
+}
+@media only screen and (max-width:360px) {
+  .amenities_container_item {
+    height: 140px;
+    width: 140px;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .bbq--off{
+    display: flex;
+  }
+  
+}

@@ -1,0 +1,60 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('rooms', 'Rooms'); ?>
+
+<?php $this->startSection('content'); ?>
+
+<!-- Banner Section -->
+<section class="banner">
+ <h2 class="banner-subtitle banner-subtitle-pages subtitle">THE ULTIMATE LUXURY</h2>
+ <h1 class="banner-main-title main-title main-title-white rooms-main-title">
+ Ultimate Room
+ </h1>
+ <div class="breadcrumb">
+ <a href="./index.php" class="a breadcrumb_a">Home</a><span class="breadcrumb_line">|</span><span class="breadcrumb_current">Rooms</span>
+ </div>
+</section>
+<!-- Rooms Sections -->
+<section class="rooms">
+ <div class="rooms-page-swiper">
+ <div class="swiper-wrapper rooms-page-swiper__wrapper">
+ <?php for($i = 0; $i < 18; $i++): ?> <div class="swiper-slide">
+ <div class="room_amenities room_amenities--down">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
+ </div>
+ <img class="room_image" src="./resources/assets/rooms/room1.jpg" alt="room" />
+ <div class="room-container room-container--down">
+ <div class="room-name">
+ <h4 class="third-subtitle room-subtitle">
+ Minimal Duplex Room
+ </h4>
+ <p class="room-description">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+ do eiusmod tempor incididunt ut labore et dolore.
+ </p>
+ <div class="room-price">
+ <span class="room-price"> $345</span>
+ <span class="room-price">/Night</span>
+ <a href="./room_details.php" class="room-booking-now">Booking Now</a>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <?php endfor; ?>
+
+ </div>
+ <!-- If we need pagination -->
+ <div class="rooms-page-swiper-pagination"></div>
+ <!-- If we need navigation buttons -->
+ <div class="rooms-page-swiper__button--prev"></div>
+ <div class="rooms-page-swiper__button--next"></div>
+ </div>
+</section>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

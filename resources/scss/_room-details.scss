@@ -1,0 +1,181 @@
+.rooms-details {
+  padding: 48px 20px;
+  max-width: 600px;
+  margin: 70px auto 0px;
+}
+.rooms-details-container{
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.room-details-subtitle {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: $grey;
+  &--gold{
+    color: $gold;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+.room-luxury-title {
+  color: $black;
+  font-family: $old-font;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+  margin-bottom: 12px;
+  &--white{
+    text-align: center;
+    color: $white;
+  }
+}
+
+.availability-title {
+  color: $black;
+  text-align: center;
+  font-family: Archivo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  margin-bottom: 35px;
+}
+.room-details-paragraph {
+  text-align: justify;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 48px;
+  color: $grey;
+  font-family: $roboto-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  &-founder {
+    margin: 0;
+    height: 81px;
+    width: 317px;
+    text-align: center;
+  }
+}
+
+.room-details-amenities {
+  padding: 12px 20px 17px;
+  max-width: 600px;
+  margin: 60px auto 0px;
+}
+
+.room-details-bar {
+  margin-top: 14px;
+  margin-bottom: 35px;
+  width: 335px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.amenities-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.amenities-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.amenities-item {
+  display: flex;
+  gap: 8px;
+}
+
+.amenities-icon {
+  width: 16px;
+  height: 16px;
+
+  &-ac{
+    background-image: url('../icons/room_amenities/ac.svg');
+  }
+  &-breakfast{
+    background-image: url('../icons/room_amenities/breakfast.svg');
+  }
+  &-cleaning{
+    background-image: url('../icons/room_amenities/cleaning.svg');
+  }
+  &-grocery{
+    background-image: url('../icons/room_amenities/grocery.svg');
+  }
+  &-shop{
+    background-image: url('../icons/room_amenities/shop.svg');
+  }
+  &-support{
+    background-image: url('../icons/room_amenities/support.svg');
+  }
+  &-security{
+    background-image: url('../icons/room_amenities/security.svg');
+  }
+  &-wifi{
+    background-image: url('../icons/room_amenities/wifi.svg');
+  }
+  &-kitchen{
+    background-image: url('../icons/room_amenities/kitchen.svg');
+  }
+  &-shower{
+    background-image: url('../icons/room_amenities/shower.svg');
+  }
+  &-bed{
+    background-image: url('../icons/room_amenities/bed.svg');
+  }
+  &-towels{
+    background-image: url('../icons/room_amenities/towels.svg');
+  }
+  &-locker{
+    background-image: url('../icons/room_amenities/locker.svg');
+  }
+  &-expert{
+    background-image: url('../icons/room_amenities/expert.svg');
+  }
+}
+.amenities-text {
+  color: $grey;
+  font-family: $roboto-font;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.founder-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 41px;
+  &-avatar{
+    position: relative;
+    background-image: url('../icons/avatars/grey_ellipse.svg');
+    height: 150px;
+    width: 150px;
+    margin-bottom: 38px;
+    &-circle{
+      position: absolute;
+      right: 0px;
+    }
+    &-checkmark{
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+  }
+}
+.cancellation{
+  margin-top: 63px;
+  margin-bottom: 101px;
+}
+
+.related-rooms{
+  margin-bottom: 74px;
+}

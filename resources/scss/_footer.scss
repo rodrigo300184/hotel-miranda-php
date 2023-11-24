@@ -1,0 +1,161 @@
+.footer {
+    margin: 0 auto;
+    max-width: 600px;
+  &-content {
+    padding: 32px 20px 32px 20px;
+    background-image: url("../assets/footer/background.svg");
+    background-repeat: repeat;
+  }
+  &-letterhead {
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    background-color: $gold;
+    color: $white;
+    font-family: $archivo-font;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+
+    &-text {
+      position: relative;
+      top: -68px;
+      left: 110px;
+      color: #111;
+      font-family: Archivo;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+      width: 137px;
+
+      & span {
+        color: #111;
+        font-family: Archivo;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &-paragraph {
+    position: relative;
+    top: -9px;
+    color: $grey;
+    font-family: $archivo-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+  a {
+    height: 40px;
+    width: 40px;
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 32px;
+  }
+  a:hover {
+    background-color: $gold;
+  }
+  &-socials {
+    display: flex;
+    gap: 10px;
+    &-facebook {
+      background-image: url("../icons/footer/facebook.svg");
+    }
+    &-twitter {
+      background-image: url("../icons/footer/twitter.svg");
+    }
+    &-behace {
+      background-image: url("../icons/footer/behance.svg");
+    }
+    &-linkedin {
+      background-image: url("../icons/footer/linkedin.svg");
+    }
+    &-youtube {
+      background-image: url("../icons/footer/youtube.svg");
+    }
+  }
+  &-subtitle {
+    color: $black;
+    font-family: $old-font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+    &-contact {
+      margin-bottom: 34px;
+    }
+  }
+  &-services {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  ul {
+    color: $grey;
+    font-family: $roboto-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+  &-contact {
+    display: flex;
+    gap: 20px;
+    &-data {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+    &-icons {
+      height: 40px;
+      width: 40px;
+    }
+    &-title {
+      color: $black;
+      font-family: $old-font;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    &-subtitle {
+      color: $grey;
+      font-family: $roboto-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  &-end {
+    padding: 16px 0px 16px 20px;
+    background-color: #f8f8f8;
+    color: $black;
+    font-family: $roboto-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    text-align: center;
+    &-copyright {
+      margin-bottom: 24px;
+    }
+  }
+}

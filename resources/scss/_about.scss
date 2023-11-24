@@ -1,0 +1,67 @@
+.about {
+  margin: 0 auto;
+  padding: 60px 20px 51px;
+  margin-top: 70px;
+  max-width: 600px;
+  &-title {
+    padding-bottom: 20px;
+  }
+  &-video {
+    min-height: 186px;
+  }
+  &-paragraph {
+    color: $black;
+    text-align: center;
+    font-family: $old-font;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.16px;
+  }
+}
+
+.restaurant {
+  max-width: 600px;
+  padding: 20px 20px 60px 20px;
+  margin: 51px auto 0;
+  &_container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: $white;
+    box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.2);
+
+    img {
+      width: 100%;
+    }
+  }
+  &_subtitle {
+    color: $grey;
+    font-family: $archivo-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    margin: 32px 0 26px;
+  }
+  &_title {
+    color: $black;
+    font-family: $old-font;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.05px;
+  }
+  &_paragraph {
+    color: $grey;
+    font-family: $archivo-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 26px 0 16px; 
+  }
+}

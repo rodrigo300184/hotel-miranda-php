@@ -1,0 +1,108 @@
+.rooms {
+  padding: 48px 20px;
+}
+
+.rooms-subtitle {
+  text-align: center;
+  margin-top: 60px;
+  color: $grey;
+  margin-bottom: 24px;
+}
+.rooms-main-title{
+  padding-bottom: 5px;
+}
+.rooms-title {
+  text-align: center;
+}
+
+.room-container {
+  position: relative;
+  top: -40px;
+  padding: 20px;
+  z-index: 2;
+  background: $white;
+  width: 300px;
+  max-height: 215px;
+  margin: 0 auto;
+  text-align: center;
+  &--down {
+    top: 28px;
+    padding-bottom:0;
+  }
+  &--related{
+    top: 5px;
+    padding-bottom:0;
+  }
+  &--popular{
+    padding-top: 49px;
+    top:-20px;
+    width: 100%;
+    max-width: 375px;
+    z-index: 1;
+  }
+}
+
+.room-name {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.room-subtitle {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  &-related{
+    font-size: 24px;
+  }
+}
+.room-description {
+  color: $grey;
+  font-family: $archivo-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.room-price {
+  color: $gold;
+  text-align: center;
+  font-family: $archivo-font;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  font-size: 14px;
+  
+  &-left{
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  &-value {
+    font-size: 32px;
+  }
+
+  &-nigth {
+    font-size: 13px;
+  }
+  &-related{
+    font-size: 16px;
+  }
+}
+.room-booking-now {
+  margin-left: 20px;
+  color: $light-grey;
+  text-align: right;
+  font-family: Archivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.room_image{
+  width: 335px;
+  height: 223px;
+}

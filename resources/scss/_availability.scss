@@ -1,0 +1,108 @@
+.availability {
+  max-width: 600px;
+  margin: 70px auto 0px;
+  padding: 36px 20px;
+  background: $black;
+  &--white {
+    background: $white;
+    margin: 49px auto 0px;
+    width: 290px;
+  }
+}
+
+.availability_form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.availability_item {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.calendar-icon {
+  position: relative;
+  width: 16px;
+  bottom: -17px;
+  &--grey {
+    z-index: 2;
+    bottom: -38px;
+    left: 255px;
+  }
+}
+
+.label-text {
+  @include label-text;
+  &--black {
+    color: $black;
+    font-size: 14px;
+  }
+}
+
+.availability_input {
+  @include avalaibility_input-text;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  background-color: transparent;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid $gold;
+  &:focus {
+    outline: none;
+  }
+}
+.availability_input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url("../icons/availability/calendar.svg");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.availability_input_rdetails {
+  @include avalaibility_input-text;
+  border: none;
+  padding: 15px 22px 15px 30px;
+  max-width: 290px;
+  background: #f8f8f8;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  &:focus {
+    outline: none;
+  }
+}
+.availability_input_rdetails[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url("../icons/availability/grey_calendar.svg");
+  position: absolute;
+  right: 15px;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.availability_text-area {
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  font: normal 400 26px/28.3px "Archivo", sans-serif;
+  font-size: 14px;
+  line-height: 15.2px;
+  color: #777;
+  padding: 15px 0 15px 30px;
+  position: relative;
+  max-width: 330px;
+  cursor: text;
+}

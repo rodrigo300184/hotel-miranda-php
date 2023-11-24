@@ -1,0 +1,36 @@
+.video-section {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: $black;
+  padding: 64px 20px 48px 20px;
+}
+.video-section-subtitle {
+  color: $gold;
+}
+.video-section-title {
+  margin: 32px 0 16px 0;
+}
+.video-section-description {
+  color: $light-grey;
+  font-family: $archivo-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.video-container {
+  margin: 0 auto;
+  width: 335px;
+  height: 270px;
+  overflow: hidden;
+  margin-bottom: 36px;
+}
+
+@media only screen and (max-width: 360px) {
+  .video-container {
+    width: 280px;
+    height: 180px;
+  }
+}

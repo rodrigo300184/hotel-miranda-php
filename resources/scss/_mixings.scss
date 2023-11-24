@@ -1,0 +1,65 @@
+@mixin navbar-titles {
+  font-family: $navbar-font-family;
+  color: $navbar-title-color;
+  font-size: $navbar-title-size;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@mixin main-title {
+  font-family: $main-title-font-family;
+  font-size: $main-title-font-size;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+
+@mixin subtitle {
+  font-family: $subtitle-font-family;
+  color: $subtitle-color;
+  font-size: $subtitle-font-size;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+}
+
+@mixin third-subtitle {
+  font-family: $third-subtitle-font-family;
+  color: $third-subtitle-color;
+  font-size: $third-subtitle-font-size;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+}
+
+@mixin button-text {
+  font-family: $button-text-font-family;
+  color: $button-text-color;
+  font-size: $button-text-font-size;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+@mixin label-text {
+  font-family: $label-text-font-family;
+  color: $label-text-color;
+  font-size: $label-text-font-size;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin avalaibility_input-text {
+  font-family: $input-text-font-family;
+  color: $input-text-color;
+  font-size: $input-text-font-size;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,43 @@
+html,
+* {
+  color: inherit;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  min-width: 320px;
+}
+
+.main-title {
+  @include main-title;
+  &-white {
+    color: $white;
+  }
+  &-black{
+    color: $black;
+  }
+}
+
+.subtitle {
+  @include subtitle;
+}
+
+.second-subtitle {
+  //REVISAR
+  text-transform: capitalize;
+  font-family: var(--old-font);
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+
+.third-subtitle {
+  @include third-subtitle;
+}
+
+
+

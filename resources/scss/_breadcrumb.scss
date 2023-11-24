@@ -1,0 +1,31 @@
+.breadcrumb {
+  font-family: $archivo-font;
+  width: fit-content;
+  background-color: $white;
+  color: $black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.5px;
+  padding: 16px 24px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+
+  &_a {
+    display: inline;
+  }
+
+  &_line {
+    margin: 0 10px;
+  }
+
+  &_current {
+    color: $gold;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .breadcrumb {
+    right: 300px;
+  }
+}
