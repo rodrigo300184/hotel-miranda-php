@@ -1,5 +1,5 @@
 <?php $_shouldextend[1]=1; ?>
-<?php $this->startSection('about', 'About'); ?>
+<?php $this->startSection('title', 'About'); ?>
 
 <?php $this->startSection('content'); ?>
 

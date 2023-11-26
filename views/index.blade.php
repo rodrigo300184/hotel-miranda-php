@@ -31,7 +31,7 @@
           <label class="label-text" for="departureDate">Departure Date</label>
           <input class="availability_input" id="departureDate" type="date" />
         </div>
-        <a href="/rooms.html" class="button button_regular button_regular--gold"
+        <a href="/rooms.php" class="button button_regular button_regular--gold"
           ><div class="button_text">CHECK AVAILABILITY</div></a
         >
       </form>

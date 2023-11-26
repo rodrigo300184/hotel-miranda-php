@@ -1,5 +1,5 @@
 @extends('layout')
-@section('about', 'About')
+@section('title', 'About')
 
 @section('content')
 

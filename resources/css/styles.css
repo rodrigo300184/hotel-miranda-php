@@ -1380,7 +1380,8 @@ header {
   line-height: normal; }
 
 .room_image {
-  width: 335px; }
+  width: 335px;
+  height: 223px; }
 
 .video-section {
   margin: 0 auto;
