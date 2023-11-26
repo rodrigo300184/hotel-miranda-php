@@ -1,5 +1,5 @@
 .rooms {
-  padding: 48px 20px;
+  padding: 48px 20px 0px;
 }
 
 .rooms-subtitle {
@@ -17,12 +17,12 @@
 
 .room-container {
   position: relative;
-  top: -40px;
-  padding: 20px;
+  top: -30px;
+  padding: 20px 20px 0px;
   z-index: 2;
   background: $white;
   width: 300px;
-  max-height: 215px;
+  max-height: 175px;
   margin: 0 auto;
   text-align: center;
   &--down {

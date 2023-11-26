@@ -3,25 +3,23 @@
 
 <?php $this->startSection('content'); ?>
 
- <!-- Banner Section -->
- <section class="banner">
+<!-- Banner Section -->
+<section class="banner">
  <h2 class="banner-subtitle subtitle">THE ULTIMATE LUXURY EXPERIENCE</h2>
  <h1 class="banner-main-title main-title main-title-white">
  The Perfect Base For You
  </h1>
  <div class="banner_button-container">
- <a href="./rooms.php" class="button button_small button_small--gold"
- ><div class="button_text">TAKE A TOUR</div></a
- >
- <a
- href="./about.php"
- class="button button_small button_small--transparent"
- ><div class="button_text">LEARN MORE</div></a
- >
+ <a href="./rooms.php" class="button button_small button_small--gold">
+ <div class="button_text">TAKE A TOUR</div>
+ </a>
+ <a href="./about.php" class="button button_small button_small--transparent">
+ <div class="button_text">LEARN MORE</div>
+ </a>
  </div>
- </section>
- <!-- Availability Section -->
- <section class="availability">
+</section>
+<!-- Availability Section -->
+<section class="availability">
  <form action="" class="availability_form">
  <div class="availability_item">
  <label class="label-text" for="arrivalDate">Arrival Date</label>
@@ -31,13 +29,13 @@
  <label class="label-text" for="departureDate">Departure Date</label>
  <input class="availability_input" id="departureDate" type="date" />
  </div>
- <a href="/rooms.html" class="button button_regular button_regular--gold"
- ><div class="button_text">CHECK AVAILABILITY</div></a
- >
+ <a href="/rooms.php" class="button button_regular button_regular--gold">
+ <div class="button_text">CHECK AVAILABILITY</div>
+ </a>
  </form>
- </section>
- <!-- About Section -->
- <section class="about-us">
+</section>
+<!-- About Section -->
+<section class="about-us">
  <div class="about-us_section-1">
  <h2 class="subtitle about-us-subtitle">About Us</h2>
  <h1 class="main-title main-title-black about-us-title">
@@ -49,18 +47,14 @@
  minim veniam, quis nostrud exercitation ullamco laboris nisi ut
  aliquip ex ea commodo consequat.
  </p>
- <a href="/rooms.php" class="button button_small button_small--gold"
- ><div class="button_text">BOOK NOW</div>
+ <a href="/rooms.php" class="button button_small button_small--gold">
+ <div class="button_text">BOOK NOW</div>
  </a>
  </div>
  <div class="about-us_section-2">
  <div class="about-us_section-3">
  <div class="about-us_section-3_image">
- <img
- class="about-us_img-team"
- src="./resources/assets/about-us/team.jpg"
- alt=""
- />
+ <img class="about-us_img-team" src="./resources/assets/about-us/team.jpg" alt="" />
  </div>
  <div class="about-us_section-3_content">
  <div class="about-us_icon-team-front"></div>
@@ -74,11 +68,7 @@
  </div>
  <div class="about-us_section-4">
  <div class="about-us_section-4_image">
- <img
- class="about-us_img-room"
- src="./resources/assets/about-us/luxury.jpg"
- alt=""
- />
+ <img class="about-us_img-room" src="./resources/assets/about-us/luxury.jpg" alt="" />
  </div>
  <div class="about-us_section-4_content">
  <div class="about-us_icon-calendar"></div>
@@ -92,84 +82,54 @@
  </div>
  </div>
  </div>
- </section>
- <!-- Rooms Sections -->
- <section class="rooms">
+</section>
+<!-- Rooms Sections -->
+<section class="rooms">
  <h2 class="subtitle rooms-subtitle">ROOMS</h2>
  <h1 class="main-title main-title-black rooms-title">Hand Picked Rooms</h1>
- <div class="room_amenities">
- <img
- src="./resources/icons/rooms/bed.svg"
- alt="bedIcon"
- class="room_amenities_icon"
- />
- <img
- src="./resources/icons/rooms/wifi.svg"
- alt="wifiIcon"
- class="room_amenities_icon"
- />
- <img
- src="./resources/icons/rooms/automobile.svg"
- alt="carIcon"
- class="room_amenities_icon"
- />
- <img
- src="./resources/icons/rooms/air-conditioner.svg"
- alt="acIcon"
- class="room_amenities_icon"
- />
- <img
- src="./resources/icons/rooms/gym.svg"
- alt="gymIcon"
- class="room_amenities_icons"
- />
- <img
- src="./resources/icons/rooms/no-smoking.svg"
- alt="nonsmokeIcon"
- class="room_amenities_icon"
- />
- <img
- src="./resources/icons/rooms/cocktails.svg"
- alt="barIcon"
- class="room_amenities_icon"
- />
- </div>
  <div class="swiper rooms-swiper">
  <div class="swiper-wrapper">
+ <?php if(isset($rooms) && count($rooms) > 0): ?>
+ <?php $__currentLoopData = $rooms; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $room): $loop = $this->incrementLoopIndices();  ?>
  <div class="swiper-slide swiper-slide-room">
- <img src="./resources/assets/rooms/room1.jpg" alt="room" />
+ <div class="room_amenities">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
  </div>
- <div class="swiper-slide swiper-slide-room">
- <img src="./resources/assets/rooms/room2.jpg" alt="room" />
+ <img src="<?php echo \htmlentities($room['photos']??'', ENT_QUOTES, 'UTF-8', false); ?>" alt="room" />
+ <div class="room-container">
+ <div class="room-name">
+ <h4 class="third-subtitle room-subtitle"><?php echo \htmlentities($room['room_type']??'', ENT_QUOTES, 'UTF-8', false); ?></h4>
+ <p class="room-description">
+ <?php echo \htmlentities($room['description']??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ <div class="room-price">
+ <span class="room-price-value"> <?php echo \htmlentities($room['price']??'', ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="room-price-nigth">/Night</span>
  </div>
- <div class="swiper-slide swiper-slide-room">
- <img src="./resources/assets/rooms/room3.jpg" alt="room" />
  </div>
+ </div>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ <?php endif; ?>
+
  </div>
  <!-- If we need pagination -->
  <div class="swiper-pagination pagination-swiper"></div>
  <!-- If we need navigation buttons -->
  <div class="swiper-btn-prev"></div>
  <div class="swiper-btn-next"></div>
- <!-- If we need scrollbar -->
- <div class="swiper-scrollbar"></div>
  </div>
- <div class="room-container">
- <div class="room-name">
- <h4 class="third-subtitle room-subtitle">Minimal Duplex Room</h4>
- <p class="room-description">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
- eiusmod tempor incididunt ut labore et dolore.
- </p>
- <div class="room-price">
- <span class="room-price-value"> $345</span>
- <span class="room-price-nigth">/Night</span>
- </div>
- </div>
- </div>
- </section>
- <!-- video Section -->
- <section class="video-section">
+</section>
+<!-- video Section -->
+<section class="video-section">
  <h2 class="subtitle video-section-subtitle">INTRO VIDEO</h2>
  <h1 class="main-title main-title-white video-section-title">
  Meet With Our Luxury Place.
@@ -181,22 +141,14 @@
  commodo consequat you have to understand this.
  </p>
  <div class="video-container">
- <iframe
- width="100%"
- height="100%"
- src="https://www.youtube.com/embed/Bu3Doe45lcU?si=_OomfvosXdgaSATd&amp;start=25&end=80;"
- title="YouTube video player"
- frameborder="0"
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
- allowfullscreen
- ></iframe>
+ <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Bu3Doe45lcU?si=_OomfvosXdgaSATd&amp;start=25&end=80;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  </div>
- <a href="" class="button button_small button_small--gold"
- ><div class="button_text">BOOK NOW</div></a
- >
- </section>
- <!-- Facilities Section -->
- <section class="facilities">
+ <a href="" class="button button_small button_small--gold">
+ <div class="button_text">BOOK NOW</div>
+ </a>
+</section>
+<!-- Facilities Section -->
+<section class="facilities">
  <h2 class="subtitle facilities-subtitle">FACILITIES</h2>
  <h1 class="main-title main-title-black">Core Features</h1>
  <div class="carousel" id="carousel--white">
@@ -255,8 +207,8 @@
  </p>
  </div>
  </div>
- </section>
- <section class="menu">
+</section>
+<section class="menu">
  <div class="menu-swiper-container">
  <img src="./resources/icons/menu/donnut.svg" alt="" class="menu-icon" />
  <h2 class="subtitle menu-subtitle">MENU</h2>
@@ -268,11 +220,7 @@
  <!-- Slides -->
  <div class="swiper-slide">
  <div class="menu-container">
- <img
- style="height: 120px; width: 120px; object-fit: cover"
- src="./resources/assets/menu/Eggs & Bacon.jpg"
- alt="Eggs & Bacon"
- />
+ <img style="height: 120px; width: 120px; object-fit: cover" src="./resources/assets/menu/Eggs & Bacon.jpg" alt="Eggs & Bacon" />
  <div>
  <h2 class="third-subtitle menu-food-title">Eggs & Bacon</h2>
  <p class="menu-food-paragraph">
@@ -284,11 +232,7 @@
  </div>
  <div class="swiper-slide">
  <div class="menu-container">
- <img
- style="height: 120px; width: 120px; object-fit: cover"
- src="./resources/assets/menu/Fruit Parfait.jpg"
- alt="Fruit Parfait"
- />
+ <img style="height: 120px; width: 120px; object-fit: cover" src="./resources/assets/menu/Fruit Parfait.jpg" alt="Fruit Parfait" />
  <div>
  <h2 class="third-subtitle menu-food-title">Fruit Parfait</h2>
  <p class="menu-food-paragraph">
@@ -300,11 +244,7 @@
  </div>
  <div class="swiper-slide">
  <div class="menu-container">
- <img
- style="height: 120px; width: 120px; object-fit: cover"
- src="./resources/assets/menu/Tea or Coffee.jpg"
- alt="Tea or Coffee"
- />
+ <img style="height: 120px; width: 120px; object-fit: cover" src="./resources/assets/menu/Tea or Coffee.jpg" alt="Tea or Coffee" />
  <div>
  <h2 class="third-subtitle menu-food-title">Tea or Coffee</h2>
  <p class="menu-food-paragraph">
@@ -316,11 +256,7 @@
  </div>
  <div class="swiper-slide">
  <div class="menu-container">
- <img
- style="height: 120px; width: 120px; object-fit: cover"
- src="./resources/assets/menu/Marmalade Selection.jpg"
- alt="Marmalade Selection"
- />
+ <img style="height: 120px; width: 120px; object-fit: cover" src="./resources/assets/menu/Marmalade Selection.jpg" alt="Marmalade Selection" />
  <div style="display: flexbox; flex-wrap: wrap">
  <h2 class="third-subtitle menu-food-title">
  Marmalade Selection
@@ -334,11 +270,7 @@
  </div>
  <div class="swiper-slide">
  <div class="menu-container">
- <img
- style="height: 120px; width: 120px; object-fit: cover"
- src="./resources/assets/menu/Chia Oatmeal.jpg"
- alt="Chia Oatmeal"
- />
+ <img style="height: 120px; width: 120px; object-fit: cover" src="./resources/assets/menu/Chia Oatmeal.jpg" alt="Chia Oatmeal" />
  <div>
  <h2 class="third-subtitle menu-food-title">Chia Oatmeal</h2>
  <p class="menu-food-paragraph">
@@ -350,11 +282,7 @@
  </div>
  <div class="swiper-slide">
  <div class="menu-container">
- <img
- style="height: 120px; width: 120px; object-fit: cover"
- src="./resources/assets/menu/Cheese Plate.jpg"
- alt="Cheese Plate"
- />
+ <img style="height: 120px; width: 120px; object-fit: cover" src="./resources/assets/menu/Cheese Plate.jpg" alt="Cheese Plate" />
  <div>
  <h2 class="third-subtitle menu-food-title">Cheese Plate</h2>
  <p class="menu-food-paragraph">
@@ -402,15 +330,11 @@
  <div class="food-swiper-pagination" id="food-swiper-pagination"></div>
  </div>
  </div>
- </section>
- <section class="stats-section">
+</section>
+<section class="stats-section">
  <div class="stats">
  <div class="stats-container">
- <img
- class="stats-icon"
- src="./resources/icons/stats/icon 5.svg"
- alt=""
- />
+ <img class="stats-icon" src="./resources/icons/stats/icon 5.svg" alt="" />
  <div>
  <span class="stats-number">84k </span>
  <span class="stats-plus">+</span>
@@ -419,11 +343,7 @@
  </div>
 
  <div class="stats-container">
- <img
- class="stats-icon"
- src="./resources/icons/stats/icon 6.svg"
- alt=""
- />
+ <img class="stats-icon" src="./resources/icons/stats/icon 6.svg" alt="" />
  <div>
  <span class="stats-number">10M</span>
  <span class="stats-plus">+</span>
@@ -431,11 +351,7 @@
  <p class="stats-paragraph">Active Backers Around World</p>
  </div>
  <div class="stats-container">
- <img
- class="stats-icon"
- src="./resources/icons/stats/icon 7.svg"
- alt=""
- />
+ <img class="stats-icon" src="./resources/icons/stats/icon 7.svg" alt="" />
  <div>
  <span class="stats-number">02k</span>
  <span class="stats-plus">+</span>
@@ -443,11 +359,7 @@
  <p class="stats-paragraph">Categories Served</p>
  </div>
  <div class="stats-container">
- <img
- class="stats-icon"
- src="./resources/icons/stats/icon 8.svg"
- alt=""
- />
+ <img class="stats-icon" src="./resources/icons/stats/icon 8.svg" alt="" />
  <div>
  <span class="stats-number">100M</span>
  <span class="stats-plus">+</span>
@@ -455,9 +367,7 @@
  <p class="stats-paragraph">Idea Raised Funds</p>
  </div>
  </div>
- </section>
+</section>
 
 <?php $this->stopSection(); ?>
-
-
 <?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

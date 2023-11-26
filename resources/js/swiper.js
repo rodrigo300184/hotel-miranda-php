@@ -1,10 +1,10 @@
 const roomsSwiper = new Swiper(".rooms-swiper", {
   spaceBetween: 20,
   centeredSlides: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: ".swiper-btn-next",
     prevEl: ".swiper-btn-prev",

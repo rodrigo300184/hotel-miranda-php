@@ -4,10 +4,10 @@
 /*----------text colors, familys and sizes----------*/
 /*---------colors----------*/
 .swiper {
-  top: -20px;
+  position: relative;
+  top: -25px;
   width: 100%;
-  max-width: 375px;
-  height: 244px; }
+  max-width: 375px; }
 
 .feature-swiper {
   width: 100%;
@@ -22,7 +22,7 @@
 
 .swiper-btn-prev {
   position: absolute;
-  top: 106px;
+  top: 160px;
   margin-left: 15px;
   width: 32px;
   height: 32px;
@@ -36,7 +36,7 @@
 
 .swiper-btn-next {
   position: absolute;
-  top: 106px;
+  top: 160px;
   right: 0px;
   margin-right: 15px;
   width: 32px;
@@ -316,7 +316,8 @@ body {
   min-height: 40px;
   background: #fff;
   box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
-  z-index: 2; }
+  z-index: 2;
+  top: 20px; }
   .room_amenities--down {
     top: 244px; }
 
@@ -1292,7 +1293,7 @@ header {
     margin: 26px 0 16px; }
 
 .rooms {
-  padding: 48px 20px; }
+  padding: 48px 20px 0px; }
 
 .rooms-subtitle {
   text-align: center;
@@ -1308,12 +1309,12 @@ header {
 
 .room-container {
   position: relative;
-  top: -40px;
-  padding: 20px;
+  top: -30px;
+  padding: 20px 20px 0px;
   z-index: 2;
   background: #fff;
   width: 300px;
-  max-height: 215px;
+  max-height: 175px;
   margin: 0 auto;
   text-align: center; }
   .room-container--down {
