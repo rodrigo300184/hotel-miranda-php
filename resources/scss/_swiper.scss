@@ -15,6 +15,7 @@
   &-room img {
     width: 100%; /* Imágenes se ajustan al ancho del contenedor */
     height: 100%; /* Imágenes se ajustan a la altura del contenedor */
+    max-height: 223px;
   }
 }
 
