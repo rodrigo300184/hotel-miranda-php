@@ -29,7 +29,7 @@
     <!-- Availability -->
     <div class="availability--white">
         <h2 class="availability-title">Check Availability</h2>
-        <form class="availability_form" id="availabilityForm">
+        <form class="availability_form availability_form_rdetails" id="availabilityForm">
                 <label class="label-text label-text--black" for="checkIn"
                   >Check In</label
                 >
@@ -38,7 +38,6 @@
                   type="date"
                   name="checkIn"
                   id="detailsCheckIn"
-                  value="<?php echo date('Y-m-d'); ?>"
                 />
                 <label class="label-text label-text--black" for="checkIn"
                   >Check Out</label
@@ -48,7 +47,6 @@
                   type="date"
                   name="checkOut"
                   id="detailsCheckOut"
-                  value="<?php echo date('Y-m-d'); ?>"
                 />
                 <label class="label-text label-text--black" for="checkIn"
                   >Full Name</label

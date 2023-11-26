@@ -1,0 +1,207 @@
+.contact {
+  transition: all 1500ms;
+  padding: 48px 20px 60px;
+  max-width: 600px;
+  margin: 70px auto 0px;
+}
+
+.contact_form {
+  display: flex;
+  background: $white;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 290px;
+  gap: 16px;
+}
+.contact_form_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  &--inner{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+  }
+}
+
+.contact_input {
+  @include avalaibility_input-text;
+  border: none;
+  padding: 15px 22px 15px 52px;
+  width: 100%;
+  background: #f8f8f8;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  &:focus {
+    outline: none;
+  }
+  &_name {
+    background-image: url("../icons/contact/friend_human.svg");
+  }
+  &_phone {
+    background-image: url("../icons/contact/phone_cell.svg");
+  }
+  &_email {
+    background-image: url("../icons/contact/email_envelope.svg");
+  }
+  &_subject {
+    background-image: url("../icons/contact/gobbler.svg");
+  }
+}
+
+.contact_text-area {
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  background-image: url("../icons/contact/pen_pencil.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+  font: normal 400 26px/28.3px "Archivo", sans-serif;
+  font-size: 14px;
+  line-height: 15.2px;
+  color: $grey;
+  padding: 15px 0 15px 52px;
+  position: relative;
+  max-width: 330px;
+  height: 175px;
+  cursor: text;
+}
+
+.contact_card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.contact_card {
+  display: flex;
+  position: relative;
+  margin: 0px auto;
+  padding: 52px 0px 52px 12px;
+  gap: 27px;
+  width: 100%;
+  height: 189px;
+  &_icon {
+    width: 40px;
+    height: 38px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &--address {
+      background-image: url("../icons/contact/card_address.svg");
+    }
+    &--phone {
+      background-image: url("../icons/contact/card_phone.svg");
+    }
+    &--email {
+      background-image: url("../icons/contact/card_email.svg");
+    }
+  }
+  &_text-container {
+    z-index: 1;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &_title {
+      color: $black;
+      font-family: $old-font;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    &_data {
+      color: $grey;
+      font-family: $roboto-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &--phone {
+        width: 136px;
+      }
+    }
+  }
+  &_big-number {
+    position: absolute;
+    text-align: right;
+    top: -6px;
+    right: 0px;
+    z-index: 0;
+    color: #f8f8f8;
+    font-family: $roboto-font;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -6px;
+  }
+}
+
+.contact_google-map {
+  margin: 70px auto 60px;
+  & iframe{
+    min-height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact {
+    padding: 48px 20px 60px;
+    max-width: 2000px;
+    margin: 70px auto 0px;
+  }
+
+  .contact_card_container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 45px;
+    min-width: fit-content;
+    max-width: 65%;
+  }
+  .contact_card {
+    display: flex;
+    position: relative;
+    margin: 0px auto;
+    padding: 52px 0px 52px 12px;
+    gap: 27px;
+    height: 189px;
+  }
+  .contact_google-map {
+    margin: 70px auto;
+    max-width: 65%;
+    & iframe{
+      min-height: 700px;
+    }
+  }
+  .contact_form {
+    display: flex;
+    background: $white;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    gap: 16px;
+  }
+  .contact_form_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+    &--inner{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap:16px;
+    }
+  }
+  .contact_text-area {
+    max-width: 100%;
+    height: 250px;
+  }
+}

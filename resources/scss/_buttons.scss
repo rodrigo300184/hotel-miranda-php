@@ -25,18 +25,17 @@
   }
   &_big {
     width: 290px;
-
     &--gold {
       background-color: $gold;
     }
     &--transparent {
       border: 2px solid rgba(255, 255, 255, 0.33);
     }
-    &--centered{
-      margin: 0 auto;
-    }
   }
   &_text {
     @include button-text;
+  }
+  &_centered{
+    margin: 0 auto;
   }
 }

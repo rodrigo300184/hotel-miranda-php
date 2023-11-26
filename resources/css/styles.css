@@ -269,8 +269,6 @@ body {
       background-color: #bead8e; }
     .button_big--transparent {
       border: 2px solid rgba(255, 255, 255, 0.33); }
-    .button_big--centered {
-      margin: 0 auto; }
   .button_text {
     font-family: Archivo;
     color: #fff;
@@ -280,6 +278,8 @@ body {
     line-height: normal;
     letter-spacing: 2.8px;
     text-transform: uppercase; }
+  .button_centered {
+    margin: 0 auto; }
 
 .breadcrumb {
   font-family: Archivo, sans-serif;
@@ -301,9 +301,9 @@ body {
   .breadcrumb_current {
     color: #bead8e; }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .breadcrumb {
-    right: 300px; } }
+    right: 375px; } }
 .room_amenities {
   position: relative;
   display: flex;
@@ -567,6 +567,190 @@ body {
   margin-bottom: 60px;
   padding-bottom: 48px; }
 
+.contact {
+  transition: all 1500ms;
+  padding: 48px 20px 60px;
+  max-width: 600px;
+  margin: 70px auto 0px; }
+
+.contact_form {
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 290px;
+  gap: 16px; }
+
+.contact_form_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px; }
+  .contact_form_container--inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; }
+
+.contact_input {
+  font-family: Roboto;
+  color: #686868;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  padding: 15px 22px 15px 52px;
+  width: 100%;
+  background: #f8f8f8;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-position: 20px center; }
+  .contact_input:focus {
+    outline: none; }
+  .contact_input_name {
+    background-image: url("../icons/contact/friend_human.svg"); }
+  .contact_input_phone {
+    background-image: url("../icons/contact/phone_cell.svg"); }
+  .contact_input_email {
+    background-image: url("../icons/contact/email_envelope.svg"); }
+  .contact_input_subject {
+    background-image: url("../icons/contact/gobbler.svg"); }
+
+.contact_text-area {
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  background-image: url("../icons/contact/pen_pencil.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+  font: normal 400 26px/28.3px "Archivo", sans-serif;
+  font-size: 14px;
+  line-height: 15.2px;
+  color: #777777;
+  padding: 15px 0 15px 52px;
+  position: relative;
+  max-width: 330px;
+  height: 175px;
+  cursor: text; }
+
+.contact_card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px; }
+
+.contact_card {
+  display: flex;
+  position: relative;
+  margin: 0px auto;
+  padding: 52px 0px 52px 12px;
+  gap: 27px;
+  width: 100%;
+  height: 189px; }
+  .contact_card_icon {
+    width: 40px;
+    height: 38px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .contact_card_icon--address {
+      background-image: url("../icons/contact/card_address.svg"); }
+    .contact_card_icon--phone {
+      background-image: url("../icons/contact/card_phone.svg"); }
+    .contact_card_icon--email {
+      background-image: url("../icons/contact/card_email.svg"); }
+  .contact_card_text-container {
+    z-index: 1;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .contact_card_text-container_title {
+      color: #111111;
+      font-family: Old Standard TT, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; }
+    .contact_card_text-container_data {
+      color: #777777;
+      font-family: Roboto, serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; }
+      .contact_card_text-container_data--phone {
+        width: 136px; }
+  .contact_card_big-number {
+    position: absolute;
+    text-align: right;
+    top: -6px;
+    right: 0px;
+    z-index: 0;
+    color: #f8f8f8;
+    font-family: Roboto, serif;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -6px; }
+
+.contact_google-map {
+  margin: 70px auto 60px; }
+  .contact_google-map iframe {
+    min-height: 200px; }
+
+@media only screen and (min-width: 1000px) {
+  .contact {
+    padding: 48px 20px 60px;
+    max-width: 2000px;
+    margin: 70px auto 0px; }
+
+  .contact_card_container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 45px;
+    min-width: fit-content;
+    max-width: 65%; }
+
+  .contact_card {
+    display: flex;
+    position: relative;
+    margin: 0px auto;
+    padding: 52px 0px 52px 12px;
+    gap: 27px;
+    height: 189px; }
+
+  .contact_google-map {
+    margin: 70px auto;
+    max-width: 65%; }
+    .contact_google-map iframe {
+      min-height: 700px; }
+
+  .contact_form {
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    gap: 16px; }
+
+  .contact_form_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px; }
+    .contact_form_container--inner {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px; }
+
+  .contact_text-area {
+    max-width: 100%;
+    height: 250px; } }
 .amenities {
   margin: 0 auto;
   max-width: 600px;
@@ -757,6 +941,10 @@ header {
   flex-flow: column;
   gap: 24px; }
 
+@media only screen and (min-width: 1000px) {
+  .banner {
+    max-width: 2000px;
+    padding-left: 372px; } }
 .availability {
   max-width: 600px;
   margin: 70px auto 0px;
@@ -824,6 +1012,7 @@ header {
 .availability_input[type="date"]::-webkit-calendar-picker-indicator {
   background-image: url("../icons/availability/calendar.svg");
   position: absolute;
+  width: 100%;
   left: 0px;
   top: 0px;
   color: #fff;
@@ -862,12 +1051,34 @@ header {
   font: normal 400 26px/28.3px "Archivo", sans-serif;
   font-size: 14px;
   line-height: 15.2px;
-  color: #777;
+  color: #777777;
   padding: 15px 0 15px 30px;
   position: relative;
   max-width: 330px;
   cursor: text; }
 
+@media only screen and (min-width: 1000px) {
+  .availability {
+    max-width: 2000px;
+    padding: 37px 0px 40px 372px; }
+    .availability--white {
+      background: #fff;
+      margin: 49px auto 0px;
+      width: 290px; }
+
+  .availability_form {
+    flex-direction: row;
+    width: 100%;
+    align-items: center; }
+    .availability_form_rdetails {
+      flex-direction: column;
+      align-items: normal; }
+
+  .availability_item {
+    width: 330px;
+    margin: 0px; }
+    .availability_item_left-margin {
+      margin-right: 12%; } }
 .about-us {
   display: flex;
   flex-direction: column; }
@@ -1169,8 +1380,7 @@ header {
   line-height: normal; }
 
 .room_image {
-  width: 335px;
-  height: 223px; }
+  width: 335px; }
 
 .video-section {
   margin: 0 auto;
