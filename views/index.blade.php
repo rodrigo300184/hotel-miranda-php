@@ -93,13 +93,27 @@
             @foreach ($rooms as $room)
       <div class="swiper-slide swiper-slide-room">
         <div class="room_amenities">
-          <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
-          <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
-          <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
-          <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
-          <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
-          <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
-          <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
+        @if (strpos($room['amenities'], 'Extra Bed') !== false)
+                    <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
+                    @endif
+                    @if (strpos($room['amenities'], 'Free Wifi') !== false)
+                    <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
+                    @endif
+                    @if (strpos($room['amenities'], 'Automobile') !== false)
+                    <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
+                    @endif
+                    @if (strpos($room['amenities'], 'Air Conditioner') !== false)
+                    <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
+                    @endif
+                    @if (strpos($room['amenities'], 'Gym') !== false)
+                    <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
+                    @endif
+                    @if (strpos($room['amenities'], 'No Smoking') !== false)
+                    <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
+                    @endif
+                    @if (strpos($room['amenities'], 'Cocktails') !== false)
+                    <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
+                    @endif
         </div>
         <img src="{{$room['photos']}}" alt="room" />
         <div class="room-container">
