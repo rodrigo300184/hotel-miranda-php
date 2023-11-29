@@ -170,7 +170,7 @@
   overflow: hidden;
 
   &__wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 90px;
   }
 
   &__button--next {
@@ -226,4 +226,11 @@
     background-color: $gold !important;
     color: #fff !important;
   }
+}
+
+@media only screen and (min-width: 1000px) {
+  .rooms-page-swiper {
+    max-width:1200px;
+  }
+  
 }

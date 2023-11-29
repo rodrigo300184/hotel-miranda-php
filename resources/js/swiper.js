@@ -70,7 +70,7 @@ const roomsPageSwiper = new Swiper(".rooms-page-swiper", {
   slidesPerView:1,
   grid: {
     fill: "row",
-    rows: 6,
+    rows: 7,
   },
   pagination: {
     el: ".rooms-page-swiper-pagination",
@@ -79,6 +79,16 @@ const roomsPageSwiper = new Swiper(".rooms-page-swiper", {
       return `<span class="swiper-pagination-bullet swiper-pagination-bullet--square">${
         index + 1
       }</span>`;
+    },
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+      grid: {
+        fill: "row",
+        rows: 4,
+      },
     },
   },
   navigation: {

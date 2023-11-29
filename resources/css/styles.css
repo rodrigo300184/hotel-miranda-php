@@ -150,7 +150,7 @@
   max-width: 375px;
   overflow: hidden; }
   .rooms-page-swiper__wrapper {
-    margin-bottom: 40px; }
+    margin-bottom: 90px; }
   .rooms-page-swiper__button--next {
     position: absolute;
     right: 13px;
@@ -197,6 +197,9 @@
     background-color: #bead8e !important;
     color: #fff !important; }
 
+@media only screen and (min-width: 1000px) {
+  .rooms-page-swiper {
+    max-width: 1200px; } }
 html,
 * {
   color: inherit;

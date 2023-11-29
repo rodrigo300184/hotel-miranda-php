@@ -10,28 +10,28 @@
     The Perfect Base For You
   </h1>
   <div class="banner_button-container">
-    <a href="./rooms.php" class="button button_small button_small--gold">
+    <a href="/rooms.php" class="button button_small button_small--gold">
       <div class="button_text">TAKE A TOUR</div>
     </a>
-    <a href="./about.php" class="button button_small button_small--transparent">
+    <a href="/about.php" class="button button_small button_small--transparent">
       <div class="button_text">LEARN MORE</div>
     </a>
   </div>
 </section>
 <!-- Availability Section -->
 <section class="availability">
-  <form action="" class="availability_form">
+  <form action="/rooms.php" method="GET" class="availability_form">
     <div class="availability_item">
       <label class="label-text" for="arrivalDate">Arrival Date</label>
-      <input class="availability_input" id="arrivalDate" type="date" />
+      <input class="availability_input" id="arrivalDate" name="arrivalDate" type="date" />
     </div>
     <div class="availability_item availability_item_left-margin">
       <label class="label-text" for="departureDate">Departure Date</label>
-      <input class="availability_input" id="departureDate" type="date" />
+      <input class="availability_input" id="departureDate" name="departureDate" type="date" />
     </div>
-    <a href="/rooms.php" class="button button_regular button_regular--gold">
+    <button type="submit" class="button button_regular button_regular--gold">
       <div class="button_text">CHECK AVAILABILITY</div>
-    </a>
+    </button>
   </form>
 </section>
 <!-- About Section -->
