@@ -37,4 +37,5 @@ if ($result === false) {
 }
 
 $rooms = $result->fetch_all(MYSQLI_ASSOC);
+
 echo $blade->run('rooms', ['rooms' => $rooms]);

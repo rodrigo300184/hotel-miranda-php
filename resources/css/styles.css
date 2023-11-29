@@ -254,7 +254,8 @@ body {
   justify-content: center;
   flex-shrink: 0;
   height: 60px;
-  border: none; }
+  border: none;
+  cursor: pointer; }
   .button_small {
     width: 217px; }
     .button_small--gold {
@@ -1377,6 +1378,8 @@ header {
     color: #de5777; }
 
 .room-booking-now {
+  border: none;
+  background-color: transparent;
   margin-left: 20px;
   color: #c2c2c2;
   text-align: right;
@@ -1384,19 +1387,12 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal; }
+  line-height: normal;
+  cursor: pointer; }
 
 .room_image {
   width: 335px;
   height: 223px; }
-
-.trapecio {
-  position: absolute;
-  width: 250px;
-  height: 0px;
-  border-right: 60px solid transparent;
-  border-left: 60px solid transparent;
-  border-bottom: 100px solid #428bca; }
 
 .room_offer_title {
   position: absolute;
