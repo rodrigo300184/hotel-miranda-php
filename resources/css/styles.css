@@ -709,7 +709,7 @@ body {
 @media only screen and (min-width: 1000px) {
   .contact {
     padding: 48px 20px 60px;
-    max-width: 2000px;
+    max-width: 3000px;
     margin: 70px auto 0px; }
 
   .contact_card_container {
@@ -948,7 +948,7 @@ header {
 
 @media only screen and (min-width: 1000px) {
   .banner {
-    max-width: 2000px;
+    max-width: 3000px;
     padding-left: 372px; } }
 .availability {
   max-width: 600px;
@@ -1064,7 +1064,7 @@ header {
 
 @media only screen and (min-width: 1000px) {
   .availability {
-    max-width: 2000px;
+    max-width: 3000px;
     padding: 37px 0px 40px 372px; }
     .availability--white {
       background: #fff;
@@ -1373,6 +1373,8 @@ header {
     font-size: 13px; }
   .room-price-related {
     font-size: 16px; }
+  .room-price-offer {
+    color: #de5777; }
 
 .room-booking-now {
   margin-left: 20px;
@@ -1387,6 +1389,28 @@ header {
 .room_image {
   width: 335px;
   height: 223px; }
+
+.trapecio {
+  position: absolute;
+  width: 250px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-bottom: 100px solid #428bca; }
+
+.room_offer_title {
+  position: absolute;
+  display: flex;
+  top: -224px;
+  left: -56.4px;
+  font-size: 15px;
+  color: #ff8ca7;
+  transform: rotate(-45deg);
+  width: 176px;
+  height: 0px;
+  border-right: 37px solid transparent;
+  border-left: 37px solid transparent;
+  border-bottom: 37px solid #111111; }
 
 .video-section {
   margin: 0 auto;

@@ -53,8 +53,14 @@
                             {{$room['description']}}
                         </p>
                         <div class="room-price">
+                            @if ($room['offer_price'])
+                            <div class="room_offer_title">Discount Price</div>
+                            <span class="room-price room-price-offer"> {{round($room['price'] + $room['price']*$room['discount']/100)}}</span>
+                            <span class="room-price room-price-offer">/Night</span>
+                            @else
                             <span class="room-price"> {{$room['price']}}</span>
                             <span class="room-price">/Night</span>
+                            @endif
                             <a href="./room_details.php" class="room-booking-now">Booking Now</a>
                         </div>
                     </div>

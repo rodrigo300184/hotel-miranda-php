@@ -8,7 +8,7 @@
   color: $grey;
   margin-bottom: 24px;
 }
-.rooms-main-title{
+.rooms-main-title {
   padding-bottom: 5px;
 }
 .rooms-title {
@@ -27,15 +27,15 @@
   text-align: center;
   &--down {
     top: 28px;
-    padding-bottom:0;
+    padding-bottom: 0;
   }
-  &--related{
+  &--related {
     top: 5px;
-    padding-bottom:0;
+    padding-bottom: 0;
   }
-  &--popular{
+  &--popular {
     padding-top: 49px;
-    top:-20px;
+    top: -20px;
     width: 100%;
     max-width: 375px;
     z-index: 1;
@@ -53,7 +53,7 @@
   font-size: 28px;
   line-height: 36px;
   letter-spacing: -1.2px;
-  &-related{
+  &-related {
     font-size: 24px;
   }
 }
@@ -74,8 +74,8 @@
   font-weight: 700;
   line-height: 43px;
   font-size: 14px;
-  
-  &-left{
+
+  &-left {
     text-align: left;
     margin-bottom: 16px;
   }
@@ -87,8 +87,11 @@
   &-nigth {
     font-size: 13px;
   }
-  &-related{
+  &-related {
     font-size: 16px;
+  }
+  &-offer {
+    color: $pink;
   }
 }
 .room-booking-now {
@@ -102,7 +105,31 @@
   line-height: normal;
 }
 
-.room_image{
+.room_image {
   width: 335px;
   height: 223px;
+}
+
+.trapecio {
+  position: absolute;
+  width: 250px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-bottom: 100px solid #428bca;
+}
+
+.room_offer_title {
+  position: absolute;
+  display: flex;
+  top: -224px;
+  left: -56.4px;
+  font-size: 15px;
+  color: #ff8ca7;
+  transform: rotate(-45deg);
+  width: 176px;
+  height: 0px;
+  border-right: 37px solid transparent;
+  border-left: 37px solid transparent;
+  border-bottom: 37px solid $black;
 }
