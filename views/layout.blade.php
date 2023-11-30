@@ -19,7 +19,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- Scripts -->
     <script src="./resources/js/script.js" defer></script>
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" defer>
 </head>
+
 <body>
     <header id="header">
         <div class="header_left">
@@ -117,6 +120,28 @@
         </div>
     </section>
     <script src="./resources/js/swiper.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    @if (isset($notification) && $notification !== '')
+    <script>
+        Toastify({
+            text: "{{$notification['message']}}",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top",
+            position: "center",
+            stopOnFocus: true,
+            style: {
+                background: "{{$notification['error']}}" ? "red" : "#bead8e",
+                width: "150px",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                top: "39px",
+            },
+        }).showToast();
+    </script>
+    @endif
 </body>
 
 </html>

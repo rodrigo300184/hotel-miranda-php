@@ -59,11 +59,11 @@
   @else
   <div class="availability--white">
     <h2 class="availability-title">Check Availability</h2>
-    <form class="availability_form availability_form_rdetails" id="availabilityForm">
+    <form action="/room_details.php" method= "GET" class="availability_form availability_form_rdetails" id="availabilityForm">
       <label class="label-text label-text--black" for="checkIn">Check In</label>
-      <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="{{$checkin}}" disabled required />
+      <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="{{$checkin}}" required />
       <label class="label-text label-text--black" for="checkOut">Check Out</label>
-      <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="{{$checkout}}" disabled required />
+      <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="{{$checkout}}" required />
       <input class="button button_big button_big--gold button_text" type="submit" value="CHECK AVAILABILITY" />
     </form>
   </div>
