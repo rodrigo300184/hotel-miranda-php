@@ -42,9 +42,9 @@
     <h2 class="availability-title">Check Availability</h2>
     <form action="/room_details.php" method="POST" class="availability_form availability_form_rdetails" id="availabilityForm">
       <label class="label-text label-text--black" for="checkIn">Check In</label>
-      <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="{{$checkin}}"  required />
+      <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="{{$checkin}}"  readonly required />
       <label class="label-text label-text--black" for="checkOut">Check Out</label>
-      <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="{{$checkout}}"  required />
+      <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="{{$checkout}}" readonly  required />
       <label class="label-text label-text--black" for="fullName">Full Name</label>
       <input class="availability_input_rdetails" type="text" name="fullName" id="detailsFullName" placeholder="Type your name..." required />
       <label class="label-text label-text--black" for="email">Email</label>
