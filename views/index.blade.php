@@ -89,38 +89,38 @@
   <h1 class="main-title main-title-black rooms-title">Hand Picked Rooms</h1>
   <div class="swiper rooms-swiper">
     <div class="swiper-wrapper">
-    @if (isset($rooms) && count($rooms) > 0)
-            @foreach ($rooms as $room)
+      @if (isset($rooms) && count($rooms) > 0)
+      @foreach ($rooms as $room)
       <div class="swiper-slide swiper-slide-room">
         <div class="room_amenities">
-        @if (strpos($room['amenities'], 'Extra Bed') !== false)
-                    <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
-                    @endif
-                    @if (strpos($room['amenities'], 'Free Wifi') !== false)
-                    <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
-                    @endif
-                    @if (strpos($room['amenities'], 'Automobile') !== false)
-                    <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
-                    @endif
-                    @if (strpos($room['amenities'], 'Air Conditioner') !== false)
-                    <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
-                    @endif
-                    @if (strpos($room['amenities'], 'Gym') !== false)
-                    <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
-                    @endif
-                    @if (strpos($room['amenities'], 'No Smoking') !== false)
-                    <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
-                    @endif
-                    @if (strpos($room['amenities'], 'Cocktails') !== false)
-                    <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
-                    @endif
+          @if (strpos($room['amenities'], 'Extra Bed') !== false)
+          <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
+          @endif
+          @if (strpos($room['amenities'], 'Free Wifi') !== false)
+          <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
+          @endif
+          @if (strpos($room['amenities'], 'Automobile') !== false)
+          <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
+          @endif
+          @if (strpos($room['amenities'], 'Air Conditioner') !== false)
+          <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
+          @endif
+          @if (strpos($room['amenities'], 'Gym') !== false)
+          <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
+          @endif
+          @if (strpos($room['amenities'], 'No Smoking') !== false)
+          <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
+          @endif
+          @if (strpos($room['amenities'], 'Cocktails') !== false)
+          <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
+          @endif
         </div>
         <img src="{{$room['photos']}}" alt="room" />
         <div class="room-container">
           <div class="room-name">
             <h4 class="third-subtitle room-subtitle">{{$room['room_type']}}</h4>
             <p class="room-description">
-            {{$room['description']}}
+              {{$room['description']}}
             </p>
             <div class="room-price">
               <span class="room-price-value"> {{$room['price']}}</span>

@@ -125,7 +125,7 @@
     <script>
         Toastify({
             text: "{{$notification['message']}}",
-            duration: 3000,
+            //duration: 3000,
             newWindow: true,
             close: true,
             gravity: "top",

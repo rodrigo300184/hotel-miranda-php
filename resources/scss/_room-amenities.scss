@@ -1,23 +1,28 @@
 .room_amenities {
-    position: relative;
-    display: flex;
-    padding: 0 24px;
-    margin: 24px auto 0;
-    gap:16px;
-    align-items: center;
-    width: fit-content;
-    max-width: 300px;
-    min-height: 40px;
-    background: $white;
-    box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
-    z-index: 2;
-    top:20px;
+  position: relative;
+  display: flex;
+  padding: 0 24px;
+  margin: 24px auto 0;
+  gap: 16px;
+  align-items: center;
+  width: fit-content;
+  max-width: 300px;
+  min-height: 40px;
+  background: $white;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.45);
+  z-index: 2;
+  top: 20px;
 
-    &--down {
-      top: 244px;
+  &--down {
+    top: 244px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .room_amenities {
+    & img {
+       width: 24px;
+       height: 24px;
     }
   }
-  ._icon {
-    width: 16px;
-    height: 16px;
-  }
+}

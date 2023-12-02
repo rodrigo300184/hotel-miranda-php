@@ -127,3 +127,10 @@
   border-left: 37px solid transparent;
   border-bottom: 37px solid $black;
 }
+
+@media only screen and (min-width:1000px) {
+  .room-container {
+    width: 690px;
+  }
+  
+}

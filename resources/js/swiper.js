@@ -9,6 +9,11 @@ const roomsSwiper = new Swiper(".rooms-swiper", {
     nextEl: ".swiper-btn-next",
     prevEl: ".swiper-btn-prev",
   },
+  breakpoints: {
+    '1000':{
+      initialSlide: 1,
+    }
+  }
 });
 
 var flkty = new Flickity('.carousel', {

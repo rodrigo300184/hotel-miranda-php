@@ -229,8 +229,38 @@
 }
 
 @media only screen and (min-width: 1000px) {
+.swiper{
+  width: 100%;
+  max-width: 770px;
+  overflow:visible !important;
+}
+.swiper-btn-prev {
+  top: 232px;
+  left: -140px;
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  background-size: 24px;
+}
+.swiper-btn-next {
+  top: 232px;
+  right: -140px;
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  background-size: 24px;
+}
+
   .rooms-page-swiper {
     max-width:1200px;
+    overflow:visible ;
   }
-  
+  .swiper-slide {
+    &-room img {
+      width: 100%; /* Imágenes se ajustan al ancho del contenedor */
+      height: 100%; /* Imágenes se ajustan a la altura del contenedor */
+      max-height: 458px;
+    }
+    
+  } 
 }
