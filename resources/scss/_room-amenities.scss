@@ -19,8 +19,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
+
+  
   .room_amenities {
-    & img {
+    & img.room_amenities_icon {
        width: 24px;
        height: 24px;
     }

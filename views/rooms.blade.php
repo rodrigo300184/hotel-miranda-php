@@ -22,25 +22,25 @@
             <div class="swiper-slide" key="{{$room['id']}}">
                 <div class="room_amenities room_amenities--down">
                     @if (strpos($room['all_amenities'], 'Extra Bed') !== false)
-                    <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
+                    <img src="./resources/icons/rooms/bed.svg" alt="bedIcon"  />
                     @endif
                     @if (strpos($room['all_amenities'], 'Free Wifi') !== false)
-                    <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
+                    <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon"  />
                     @endif
                     @if (strpos($room['all_amenities'], 'Automobile') !== false)
-                    <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
+                    <img src="./resources/icons/rooms/automobile.svg" alt="carIcon"  />
                     @endif
                     @if (strpos($room['all_amenities'], 'Air Conditioner') !== false)
-                    <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
+                    <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon"  />
                     @endif
                     @if (strpos($room['all_amenities'], 'Gym') !== false)
-                    <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
+                    <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
                     @endif
                     @if (strpos($room['all_amenities'], 'No Smoking') !== false)
-                    <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
+                    <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon"  />
                     @endif
                     @if (strpos($room['all_amenities'], 'Cocktails') !== false)
-                    <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
+                    <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon"  />
                     @endif
                 </div>
                 <img class="room_image" src="{{ $room[ 'all_photos' ] }}" alt="room" />

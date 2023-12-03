@@ -116,8 +116,8 @@
 .room_offer_title {
   position: absolute;
   display: flex;
-  top: -224px;
-  left: -56.4px;
+  top: -223px;
+  left: -18.4px;
   font-size: 15px;
   color: #ff8ca7;
   transform: rotate(-45deg);
@@ -128,9 +128,11 @@
   border-bottom: 37px solid $black;
 }
 
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width: 1000px) {
   .room-container {
     width: 690px;
+    &--down {
+      width: 375px;
+    }
   }
-  
 }
