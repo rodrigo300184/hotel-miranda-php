@@ -185,186 +185,64 @@
 
     <div class="rooms-related-swiper">
       <div class="swiper-wrapper">
+        @if (isset($relatedRooms))
+        @foreach ($relatedRooms as $relatedRoom)
         <div class="swiper-slide swiper-slide-room-related">
           <div>
             <div class="room_amenities room_amenities--down">
+              @if (strpos($relatedRoom['all_amenities'], 'Extra Bed') !== false)
               <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
+              @endif
+              @if (strpos($relatedRoom['all_amenities'], 'Free Wifi') !== false)
               <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
+              @endif
+              @if (strpos($relatedRoom['all_amenities'], 'Automobile') !== false)
               <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
+              @endif
+              @if (strpos($relatedRoom['all_amenities'], 'Air Conditioner') !== false)
               <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
+              @endif
+              @if (strpos($relatedRoom['all_amenities'], 'Gym') !== false)
               <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
+              @endif
+              @if (strpos($relatedRoom['all_amenities'], 'No Smoking') !== false)
               <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
+              @endif
+              @if (strpos($relatedRoom['all_amenities'], 'Cocktails') !== false)
               <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
+              @endif
             </div>
-            <img src="./resources/assets/rooms/room1.jpg" alt="room" />
+            <img src="{{$relatedRoom['all_photos']}}" alt="room" />
             <div class="room-container room-container--related">
               <div class="room-name">
                 <h4 class="third-subtitle room-subtitle-related">
-                  Minimal Duplex Room
+                  {{$relatedRoom['room_type']}}
                 </h4>
                 <p class="room-description">
-                  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
-                  do eiusmod tempor.
+                  {{$relatedRoom['description']}}
                 </p>
                 <div class="room-price">
-                  <span class="room-price-related"> $345</span>
-                  <span class="room-price-related">/Night</span>
-                  <a href="./room_details.php" class="room-booking-now">Booking Now</a>
+                  <form action="/room_details.php" method="GET">
+                    @if ($relatedRoom['offer_price'])
+                    <div class="room_offer_title room_offer_title_related">Discount Price</div>
+                    <span class="room-price room-price-offer"> {{round($relatedRoom['price'] - $relatedRoom['price']*$relatedRoom['discount']/100)}}</span>
+                    <span class="room-price room-price-offer">/Night</span>
+                    @else
+                    <span class="room-price"> {{$relatedRoom['price']}}</span>
+                    <span class="room-price">/Night</span>
+                    @endif
+                    <input type="hidden" name="room_id" value="{{$relatedRoom['id']}}" />
+                    <button type="submit" class="room-booking-now">Booking Now</button>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide swiper-slide-room-related">
-          <div>
-            <div class="room_amenities room_amenities--down">
-              <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
-              <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
-              <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
-              <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
-              <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
-              <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
-              <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
-            </div>
-            <img src="./resources/assets/rooms/room1.jpg" alt="room" />
-            <div class="room-container room-container--related">
-              <div class="room-name">
-                <h4 class="third-subtitle room-subtitle-related">
-                  Minimal Duplex Room
-                </h4>
-                <p class="room-description">
-                  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
-                  do eiusmod tempor.
-                </p>
-                <div class="room-price">
-                  <span class="room-price-related"> $345</span>
-                  <span class="room-price-related">/Night</span>
-                  <a href="./room_details.php" class="room-booking-now">Booking Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-room-related">
-          <div>
-            <div class="room_amenities room_amenities--down">
-              <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
-              <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
-              <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
-              <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
-              <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
-              <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
-              <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
-            </div>
-            <img src="./resources/assets/rooms/room1.jpg" alt="room" />
-            <div class="room-container room-container--related">
-              <div class="room-name">
-                <h4 class="third-subtitle room-subtitle-related">
-                  Minimal Duplex Room
-                </h4>
-                <p class="room-description">
-                  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
-                  do eiusmod tempor.
-                </p>
-                <div class="room-price">
-                  <span class="room-price-related"> $345</span>
-                  <span class="room-price-related">/Night</span>
-                  <a href="./room_details.php" class="room-booking-now">Booking Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-room-related">
-          <div>
-            <div class="room_amenities room_amenities--down">
-              <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
-              <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
-              <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
-              <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
-              <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
-              <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
-              <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
-            </div>
-            <img src="./resources/assets/rooms/room1.jpg" alt="room" />
-            <div class="room-container room-container--related">
-              <div class="room-name">
-                <h4 class="third-subtitle room-subtitle-related">
-                  Minimal Duplex Room
-                </h4>
-                <p class="room-description">
-                  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
-                  do eiusmod tempor.
-                </p>
-                <div class="room-price">
-                  <span class="room-price-related"> $345</span>
-                  <span class="room-price-related">/Night</span>
-                  <a href="./room_details.php" class="room-booking-now">Booking Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-room-related">
-          <div>
-            <div class="room_amenities room_amenities--down">
-              <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
-              <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
-              <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
-              <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
-              <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
-              <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
-              <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
-            </div>
-            <img src="./resources/assets/rooms/room1.jpg" alt="room" />
-            <div class="room-container room-container--related">
-              <div class="room-name">
-                <h4 class="third-subtitle room-subtitle-related">
-                  Minimal Duplex Room
-                </h4>
-                <p class="room-description">
-                  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
-                  do eiusmod tempor.
-                </p>
-                <div class="room-price">
-                  <span class="room-price-related"> $345</span>
-                  <span class="room-price-related">/Night</span>
-                  <a href="./room_details.php" class="room-booking-now">Booking Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-room-related">
-          <div>
-            <div class="room_amenities room_amenities--down">
-              <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
-              <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
-              <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
-              <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
-              <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
-              <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
-              <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
-            </div>
-            <img src="./resources/assets/rooms/room1.jpg" alt="room" />
-            <div class="room-container room-container--related">
-              <div class="room-name">
-                <h4 class="third-subtitle room-subtitle-related">
-                  Minimal Duplex Room
-                </h4>
-                <p class="room-description">
-                  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
-                  do eiusmod tempor.
-                </p>
-                <div class="room-price">
-                  <span class="room-price-related"> $345</span>
-                  <span class="room-price-related">/Night</span>
-                  <a href="./room_details.php" class="room-booking-now">Booking Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        </div>@endforeach
+        @else
+        <p>No rooms available.</p>
+        @endif
       </div>
       <!-- If we need navigation buttons -->
       <div class="rooms-related-swiper-btn-prev"></div>

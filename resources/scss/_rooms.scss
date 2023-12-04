@@ -34,8 +34,8 @@
   &--related {
     top: 35px;
     padding-bottom: 0;
-    height: 200px;
-    max-height: 200px;
+    height: 250px;
+    max-height: 250px;
   }
   &--popular {
     padding-top: 49px;
@@ -122,7 +122,7 @@
   position: absolute;
   display: flex;
   top: -223px;
-  left: -18.4px;
+  left: -56.4px;
   font-size: 15px;
   color: #ff8ca7;
   transform: rotate(-45deg);
@@ -131,23 +131,44 @@
   border-right: 37px solid transparent;
   border-left: 37px solid transparent;
   border-bottom: 37px solid $black;
+  &_related {
+    top: -231px;
+    left: -82px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   .room-container {
     max-height: 180px;
     width: 690px;
-    &--related{
+    &--related {
       width: 300px;
-      height: 200px;
-      max-height: 200px;
-  
+      height: 250px;
+      max-height: 250px;
     }
     &--shadow {
       height: 180px;
     }
     &--down {
       width: 375px;
+    }
+  }
+  .room_offer_title {
+    position: absolute;
+    display: flex;
+    top: -223px;
+    left: -18.4px;
+    font-size: 15px;
+    color: #ff8ca7;
+    transform: rotate(-45deg);
+    width: 176px;
+    height: 0px;
+    border-right: 37px solid transparent;
+    border-left: 37px solid transparent;
+    border-bottom: 37px solid $black;
+    &_related {
+      top: -231px;
+      left: -82px;
     }
   }
 }

@@ -25,7 +25,23 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["room_id"])) {
 
     $room = $result->fetch_all(MYSQLI_ASSOC);
     $_SESSION['selectedRoom'] = $room[0];
-    echo $blade->run('room_details', ['room' => $room[0], 'checkin' => $arrivalDate, 'checkout' => $departureDate]);
+
+    $sqlRelatedRooms = "
+          SELECT r.*, (SELECT GROUP_CONCAT(DISTINCT photos) FROM photo WHERE room_id = r.id) AS all_photos, GROUP_CONCAT(DISTINCT a.amenities) AS all_amenities
+          FROM room r
+          LEFT JOIN amenities_has_room ahr ON r.id = ahr.room_id
+          LEFT JOIN amenity a ON a.id = ahr.amenity_id
+          WHERE r.id != ? AND r.room_type = ?
+          GROUP BY r.id";
+    $stmt = $conn->prepare($sqlRelatedRooms);
+    $stmt->bind_param("is", $id, $room[0]['room_type']);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+
+    $relatedRooms = $result->fetch_all(MYSQLI_ASSOC);
+
+    echo $blade->run('room_details', ['room' => $room[0], 'relatedRooms' => $relatedRooms, 'checkin' => $arrivalDate, 'checkout' => $departureDate]);
     unset($_SESSION['arrivalDate']);
     unset($_SESSION['departureDate']);
     /*This POST originates in the booking form in room_details*/
@@ -61,6 +77,19 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["room_id"])) {
     $checkout = date("Y-m-d", strtotime($_GET['checkOut']));
     $room_id = intval($_SESSION['room_id']);
 
+    $sqlRelatedRooms = "
+    SELECT r.*, (SELECT GROUP_CONCAT(DISTINCT photos) FROM photo WHERE room_id = r.id) AS all_photos, GROUP_CONCAT(DISTINCT a.amenities) AS all_amenities
+    FROM room r
+    LEFT JOIN amenities_has_room ahr ON r.id = ahr.room_id
+    LEFT JOIN amenity a ON a.id = ahr.amenity_id
+    WHERE r.id != ? AND r.room_type = (SELECT room_type FROM room WHERE id = ?)  
+    GROUP BY r.id";
+    $stmt = $conn->prepare($sqlRelatedRooms);
+    $stmt->bind_param("ii", $room_id, $room_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $relatedRooms = $result->fetch_all(MYSQLI_ASSOC);
+
     $sql = "
           SELECT r.*, (SELECT GROUP_CONCAT(DISTINCT photos) FROM photo WHERE room_id = r.id) AS all_photos, GROUP_CONCAT(DISTINCT a.amenities) AS all_amenities
           FROM room r
@@ -81,9 +110,9 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["room_id"])) {
     if ($result->num_rows > 0) {
         $room = $result->fetch_all(MYSQLI_ASSOC);
         $notification = array('message' => 'The selected room is available within the selected dates.', 'error' => false);
-        echo $blade->run('room_details', ['room' => $room[0], 'checkin' => $checkin, 'checkout' => $checkout, 'notification' => $notification]);
+        echo $blade->run('room_details', ['room' => $room[0], 'relatedRooms' => $relatedRooms, 'checkin' => $checkin, 'checkout' => $checkout, 'notification' => $notification]);
     } else {
         $notification = array('message' => 'The selected room is not available within the selected dates.', 'error' => true);
-        echo $blade->run('room_details', ['room' => $_SESSION['selectedRoom'], 'notification' => $notification]);
+        echo $blade->run('room_details', ['room' => $_SESSION['selectedRoom'], 'relatedRooms' => $relatedRooms, 'notification' => $notification]);
     }
 }

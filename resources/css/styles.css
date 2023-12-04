@@ -255,7 +255,7 @@
     background-size: 24px; }
 
   .rooms-page-swiper {
-    max-width: 1200px; }
+    min-width: 1200px; }
 
   .swiper-slide-room img {
     width: 100%;
@@ -271,8 +271,8 @@
     max-height: 223px; }
 
   .rooms-related-swiper {
-    min-width: 1000px;
-    max-width: 1200px; } }
+    margin: 0 auto;
+    min-width: 1200px; } }
 html,
 * {
   color: inherit;
@@ -568,8 +568,6 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .rooms-details {
-    padding-left: 19%;
-    padding-right: 19%;
     max-width: 3000px; } }
 .offers-title {
   padding-bottom: 20px; }
@@ -1422,8 +1420,8 @@ header {
   .room-container--related {
     top: 35px;
     padding-bottom: 0;
-    height: 200px;
-    max-height: 200px; }
+    height: 250px;
+    max-height: 250px; }
   .room-container--popular {
     padding-top: 49px;
     top: -20px;
@@ -1495,7 +1493,7 @@ header {
   position: absolute;
   display: flex;
   top: -223px;
-  left: -18.4px;
+  left: -56.4px;
   font-size: 15px;
   color: #ff8ca7;
   transform: rotate(-45deg);
@@ -1504,6 +1502,9 @@ header {
   border-right: 37px solid transparent;
   border-left: 37px solid transparent;
   border-bottom: 37px solid #111111; }
+  .room_offer_title_related {
+    top: -231px;
+    left: -82px; }
 
 @media only screen and (min-width: 1000px) {
   .room-container {
@@ -1511,12 +1512,29 @@ header {
     width: 690px; }
     .room-container--related {
       width: 300px;
-      height: 200px;
-      max-height: 200px; }
+      height: 250px;
+      max-height: 250px; }
     .room-container--shadow {
       height: 180px; }
     .room-container--down {
-      width: 375px; } }
+      width: 375px; }
+
+  .room_offer_title {
+    position: absolute;
+    display: flex;
+    top: -223px;
+    left: -18.4px;
+    font-size: 15px;
+    color: #ff8ca7;
+    transform: rotate(-45deg);
+    width: 176px;
+    height: 0px;
+    border-right: 37px solid transparent;
+    border-left: 37px solid transparent;
+    border-bottom: 37px solid #111111; }
+    .room_offer_title_related {
+      top: -231px;
+      left: -82px; } }
 .video-section {
   margin: 0 auto;
   max-width: 600px;

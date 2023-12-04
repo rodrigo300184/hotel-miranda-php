@@ -56,7 +56,7 @@
                             <form action="/room_details.php" method="GET">
                                 @if ($room['offer_price'])
                                 <div class="room_offer_title">Discount Price</div>
-                                <span class="room-price room-price-offer"> {{round($room['price'] + $room['price']*$room['discount']/100)}}</span>
+                                <span class="room-price room-price-offer"> {{round($room['price'] - $room['price']*$room['discount']/100)}}</span>
                                 <span class="room-price room-price-offer">/Night</span>
                                 @else
                                 <span class="room-price"> {{$room['price']}}</span>

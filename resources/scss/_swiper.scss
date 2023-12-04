@@ -292,7 +292,7 @@
   }
 
   .rooms-page-swiper {
-    max-width: 1200px;
+    min-width: 1200px;
   }
   .swiper-slide {
     &-room img {
@@ -307,7 +307,7 @@
     }
   }
   .rooms-related-swiper {
-    min-width: 1000px;
-    max-width: 1200px;
+    margin: 0 auto;
+    min-width: 1200px;
   }
 }
