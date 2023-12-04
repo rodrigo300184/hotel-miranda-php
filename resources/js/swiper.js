@@ -101,3 +101,22 @@ const roomsPageSwiper = new Swiper(".rooms-page-swiper", {
     prevEl: ".rooms-page-swiper__button--prev ",
   },
 });
+
+const roomsRelatedSwiper = new Swiper(".rooms-related-swiper", {
+  spaceBetween: 20,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+  },
+  navigation: {
+    nextEl: ".rooms-related-swiper-btn-next",
+    prevEl: ".rooms-related-swiper-btn-prev",
+  },
+});

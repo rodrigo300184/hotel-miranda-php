@@ -42,9 +42,9 @@
  <h2 class="availability-title">Check Availability</h2>
  <form action="/room_details.php" method="POST" class="availability_form availability_form_rdetails" id="availabilityForm">
  <label class="label-text label-text--black" for="checkIn">Check In</label>
- <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="<?php echo \htmlentities($checkin??'', ENT_QUOTES, 'UTF-8', false); ?>"  readonly required />
+ <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="<?php echo \htmlentities($checkin??'', ENT_QUOTES, 'UTF-8', false); ?>" readonly required />
  <label class="label-text label-text--black" for="checkOut">Check Out</label>
- <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="<?php echo \htmlentities($checkout??'', ENT_QUOTES, 'UTF-8', false); ?>" readonly  required />
+ <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="<?php echo \htmlentities($checkout??'', ENT_QUOTES, 'UTF-8', false); ?>" readonly required />
  <label class="label-text label-text--black" for="fullName">Full Name</label>
  <input class="availability_input_rdetails" type="text" name="fullName" id="detailsFullName" placeholder="Type your name..." required />
  <label class="label-text label-text--black" for="email">Email</label>
@@ -59,7 +59,7 @@
  <?php else: ?>
  <div class="availability--white">
  <h2 class="availability-title">Check Availability</h2>
- <form action="/room_details.php" method= "GET" class="availability_form availability_form_rdetails" id="availabilityForm">
+ <form action="/room_details.php" method="GET" class="availability_form availability_form_rdetails" id="availabilityForm">
  <label class="label-text label-text--black" for="checkIn">Check In</label>
  <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="<?php echo \htmlentities($checkin??'', ENT_QUOTES, 'UTF-8', false); ?>" required />
  <label class="label-text label-text--black" for="checkOut">Check Out</label>
@@ -182,36 +182,21 @@
  <section class="related-rooms">
  <h2 class="third-subtitle">Related Rooms</h2>
  <div class="room-details-bar"></div>
- <section>
- <div class="room_amenities room_amenities--down">
- <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
- <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
- <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
- <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
- <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
- <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
- <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
- </div>
- <div class="swiper rooms-swiper">
+
+ <div class="rooms-related-swiper">
  <div class="swiper-wrapper">
- <div class="swiper-slide swiper-slide-room">
+ <div class="swiper-slide swiper-slide-room-related">
+ <div>
+ <div class="room_amenities room_amenities--down">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
+ </div>
  <img src="./resources/assets/rooms/room1.jpg" alt="room" />
- </div>
- <div class="swiper-slide swiper-slide-room">
- <img src="./resources/assets/rooms/room2.jpg" alt="room" />
- </div>
- <div class="swiper-slide swiper-slide-room">
- <img src="./resources/assets/rooms/room3.jpg" alt="room" />
- </div>
- </div>
- <!-- If we need pagination -->
- <div class="swiper-pagination pagination-swiper"></div>
- <!-- If we need navigation buttons -->
- <div class="swiper-btn-prev"></div>
- <div class="swiper-btn-next"></div>
- <!-- If we need scrollbar -->
- <div class="swiper-scrollbar"></div>
- </div>
  <div class="room-container room-container--related">
  <div class="room-name">
  <h4 class="third-subtitle room-subtitle-related">
@@ -228,7 +213,165 @@
  </div>
  </div>
  </div>
- </section>
+ </div>
+ </div>
+ <div class="swiper-slide swiper-slide-room-related">
+ <div>
+ <div class="room_amenities room_amenities--down">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
+ </div>
+ <img src="./resources/assets/rooms/room1.jpg" alt="room" />
+ <div class="room-container room-container--related">
+ <div class="room-name">
+ <h4 class="third-subtitle room-subtitle-related">
+ Minimal Duplex Room
+ </h4>
+ <p class="room-description">
+ Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
+ do eiusmod tempor.
+ </p>
+ <div class="room-price">
+ <span class="room-price-related"> $345</span>
+ <span class="room-price-related">/Night</span>
+ <a href="./room_details.php" class="room-booking-now">Booking Now</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="swiper-slide swiper-slide-room-related">
+ <div>
+ <div class="room_amenities room_amenities--down">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
+ </div>
+ <img src="./resources/assets/rooms/room1.jpg" alt="room" />
+ <div class="room-container room-container--related">
+ <div class="room-name">
+ <h4 class="third-subtitle room-subtitle-related">
+ Minimal Duplex Room
+ </h4>
+ <p class="room-description">
+ Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
+ do eiusmod tempor.
+ </p>
+ <div class="room-price">
+ <span class="room-price-related"> $345</span>
+ <span class="room-price-related">/Night</span>
+ <a href="./room_details.php" class="room-booking-now">Booking Now</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="swiper-slide swiper-slide-room-related">
+ <div>
+ <div class="room_amenities room_amenities--down">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
+ </div>
+ <img src="./resources/assets/rooms/room1.jpg" alt="room" />
+ <div class="room-container room-container--related">
+ <div class="room-name">
+ <h4 class="third-subtitle room-subtitle-related">
+ Minimal Duplex Room
+ </h4>
+ <p class="room-description">
+ Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
+ do eiusmod tempor.
+ </p>
+ <div class="room-price">
+ <span class="room-price-related"> $345</span>
+ <span class="room-price-related">/Night</span>
+ <a href="./room_details.php" class="room-booking-now">Booking Now</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="swiper-slide swiper-slide-room-related">
+ <div>
+ <div class="room_amenities room_amenities--down">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
+ </div>
+ <img src="./resources/assets/rooms/room1.jpg" alt="room" />
+ <div class="room-container room-container--related">
+ <div class="room-name">
+ <h4 class="third-subtitle room-subtitle-related">
+ Minimal Duplex Room
+ </h4>
+ <p class="room-description">
+ Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
+ do eiusmod tempor.
+ </p>
+ <div class="room-price">
+ <span class="room-price-related"> $345</span>
+ <span class="room-price-related">/Night</span>
+ <a href="./room_details.php" class="room-booking-now">Booking Now</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="swiper-slide swiper-slide-room-related">
+ <div>
+ <div class="room_amenities room_amenities--down">
+ <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
+ <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
+ <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
+ <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
+ <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
+ <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
+ <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
+ </div>
+ <img src="./resources/assets/rooms/room1.jpg" alt="room" />
+ <div class="room-container room-container--related">
+ <div class="room-name">
+ <h4 class="third-subtitle room-subtitle-related">
+ Minimal Duplex Room
+ </h4>
+ <p class="room-description">
+ Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed
+ do eiusmod tempor.
+ </p>
+ <div class="room-price">
+ <span class="room-price-related"> $345</span>
+ <span class="room-price-related">/Night</span>
+ <a href="./room_details.php" class="room-booking-now">Booking Now</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <!-- If we need navigation buttons -->
+ <div class="rooms-related-swiper-btn-prev"></div>
+ <div class="rooms-related-swiper-btn-next"></div>
+ </div>
+
+
  </section>
 </section>
 
