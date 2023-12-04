@@ -1356,7 +1356,6 @@ header {
   text-align: center; }
 
 .room-container {
-  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.15);
   position: relative;
   top: -30px;
   padding: 20px 20px 0px;
@@ -1366,6 +1365,9 @@ header {
   max-height: 180px;
   margin: 0 auto;
   text-align: center; }
+  .room-container--shadow {
+    height: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.15); }
   .room-container--down {
     top: 28px;
     padding-bottom: 0; }
@@ -1399,7 +1401,8 @@ header {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; }
+  line-height: 24px;
+  min-height: 48px; }
 
 .room-price {
   color: #bead8e;
