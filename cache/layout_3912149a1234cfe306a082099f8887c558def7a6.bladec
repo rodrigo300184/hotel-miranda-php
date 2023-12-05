@@ -52,7 +52,9 @@
  </div>
  <!-- Footer Section -->
  <section class="footer">
+ <div class="footer-inner">
  <div class="footer-content">
+ <div class="footer-container_first">
  <div class="footer-letterhead">H</div>
  <h2 class="footer-letterhead-text"><span>HOTEL </span>MIRANDA</h2>
  <p class="footer-paragraph">
@@ -67,6 +69,8 @@
  <a href="https://www.linkedin.com/" class="footer-socials-linkedin"></a>
  <a href="https://www.youtube.com/" class="footer-socials-youtube"></a>
  </div>
+ </div>
+ <div class="footer-container_second">
  <h4 class="footer-subtitle">Services.</h4>
  <div class="footer-services">
  <ul>
@@ -84,6 +88,8 @@
  <li>+ Tour Consultancy</li>
  </ul>
  </div>
+ </div>
+ <div class="footer-container_third">
  <h4 class="footer-subtitle footer-subtitle-contact">Contact Us.</h4>
  <div class="footer-contact-data">
  <div class="footer-contact">
@@ -111,6 +117,8 @@
  </div>
  </div>
  </div>
+ </div>
+ </div>
  <div class="footer-end">
  <p class="footer-end-copyright">Copyright By@Rodrigo - 2023</p>
  <p>Terms of use | Privacy Environmental Policy</p>
@@ -122,7 +130,7 @@
  <script>
  Toastify({
  text: "<?php echo \htmlentities($notification['message']??'', ENT_QUOTES, 'UTF-8', false); ?>",
- //duration: 3000,
+ duration: 5000,
  newWindow: true,
  close: true,
  gravity: "top",

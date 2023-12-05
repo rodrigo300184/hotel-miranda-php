@@ -1,7 +1,7 @@
-.stats-section{
-    margin: 0 auto;
-    max-width: 600px;
-    margin-bottom: 60px;
+.stats-section {
+  margin: 0 auto;
+  max-width: 600px;
+  margin-bottom: 60px;
 }
 
 .stats {
@@ -23,7 +23,7 @@
     height: 80px;
     margin-bottom: 16px;
   }
-  &-text-container{
+  &-text-container {
     display: flex;
     align-items: center;
     width: fit-content;
@@ -54,5 +54,17 @@
     line-height: 136.4%;
     position: relative;
     top: -12px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .stats-section {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 60px;
+  }
+  .stats {
+    height: 350px;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }

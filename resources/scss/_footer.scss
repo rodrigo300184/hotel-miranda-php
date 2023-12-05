@@ -1,10 +1,16 @@
 .footer {
-    margin: 0 auto;
-    max-width: 600px;
-  &-content {
-    padding: 32px 20px 32px 20px;
+  margin: 0 auto;
+  max-width: 600px;
+
+  &-inner {
     background-image: url("../assets/footer/background.svg");
     background-repeat: repeat;
+    padding: 32px 20px 32px 20px;
+  }
+  &-container {
+    &_first {
+      max-width: 245px;
+    }
   }
   &-letterhead {
     margin-left: 2px;
@@ -104,6 +110,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
   ul {
     color: $grey;
@@ -156,6 +163,33 @@
     text-align: center;
     &-copyright {
       margin-bottom: 24px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    max-width: 3000px;
+
+    &-inner {
+      padding: 100px 10%;
+    }
+    &-content {
+      margin: 0 auto;
+      width: 1200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-end{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      height: 80px;
+      gap: 30%;
+       &-copyright {
+      margin-bottom: 0px;
+    }
     }
   }
 }
