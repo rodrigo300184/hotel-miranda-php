@@ -62,6 +62,43 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    margin: 26px 0 16px; 
+    margin: 26px 0 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .about {
+    padding: 120px 10% 70px;
+    max-width: 3000px;
+    &-title {
+      padding-bottom: 20px;
+    }
+    &-paragraph {
+      margin: 60px auto 0;
+      max-width: 1200px;
+      font-size: 72px;
+    }
+    &-video {
+      margin: 0 auto;
+      max-width: 1200px;
+      & iframe {
+        min-height: 650px;
+      }
+    }
+  }
+  .restaurant {
+    margin: 40px auto 100px;
+    max-width: 1200px;
+    &_container {
+      width: 1200px;
+      flex-direction: row;
+      gap: 57px;
+      & img {
+        width: 530px;
+        height: 420px;
+      }
+      &_text{
+        padding-right:60px;
+      }
+    }
   }
 }

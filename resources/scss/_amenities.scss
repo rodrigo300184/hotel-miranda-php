@@ -30,7 +30,7 @@
         height: 58px;
         width: 50px;
       }
-      &-bbq{
+      &-bbq {
         height: 58px;
         width: 50px;
       }
@@ -65,25 +65,57 @@
         }
         .amenities_container_item-text {
           color: $white;
-         
         }
       }
     }
   }
 }
-.bbq--off{
+.bbq--off {
   display: none;
 }
-@media only screen and (max-width:360px) {
+@media only screen and (max-width: 360px) {
   .amenities_container_item {
     height: 140px;
     width: 140px;
   }
 }
 
-@media only screen and (min-width:1000px) {
-  .bbq--off{
+@media only screen and (min-width: 1000px) {
+  .bbq--off {
     display: flex;
   }
-  
+  .amenities {
+    max-width: 1200px;
+    &_container {
+      justify-content: center;
+
+      &_item {
+        height: 200px;
+        width: 200px;
+
+        &-breakfast {
+          height: 64px;
+          width: 74px;
+        }
+        &-pickup {
+          padding-top: 10px;
+          height: 67px;
+          width: 72px;
+          color: $gold;
+        }
+        &-guide {
+          height: 66px;
+          width: 67px;
+        }
+        &-bbq {
+          height: 66px;
+          width: 64px;
+        }
+        &-luxury {
+          height: 66px;
+          width: 66px;
+        }
+      }
+    }
+  }
 }

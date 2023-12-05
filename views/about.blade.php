@@ -52,19 +52,21 @@
 <section class="restaurant">
     <div class="restaurant_container">
         <img src="./resources/assets/about/restaurant.jpg" alt="restaurant" />
-        <h2 class="restaurant_subtitle">RESTAURANT</h2>
-        <h1 class="restaurant_title">
-            Get Restaurant Facilities & Many Other More
-        </h1>
-        <p class="restaurant_paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip.
-        </p>
-        <a href="/rooms.php" class="button button_small button_small--gold">
-            <div class="button_text">TAKE A TOUR</div>
-        </a>
+        <div class="restaurant_container_text">
+            <h2 class="restaurant_subtitle">RESTAURANT</h2>
+            <h1 class="restaurant_title">
+                Get Restaurant Facilities & Many Other More
+            </h1>
+            <p class="restaurant_paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip.
+            </p>
+            <a href="/rooms.php" class="button button_small button_small--gold">
+                <div class="button_text">TAKE A TOUR</div>
+            </a>
+        </div>
     </div>
 </section>
 <!-- Facilities Section -->
@@ -72,74 +74,78 @@
     <h2 class="subtitle facilities-subtitle facilities-subtitle--dark">
         FACILITIES
     </h2>
-    <h1 class="main-title main-title-white">Core Features</h1>
-    <div class="carousel carousel--dark">
-        <div class="carousel-cell feature">
-            <div class="feature_icon feature_icon--one"></div>
-            <span class="feature_number feature_number--dark">01</span>
-            <h4 class="third-subtitle feature_title feature_title--dark">
-                Have high rating
-            </h4>
-            <p class="feature_p feature_p--dark">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna..
-            </p>
+    <h1 class="main-title main-title-centered main-title-white">Core Features</h1>
+    <div class="facilities-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--dark">
+                <div class="feature_icon feature_icon--one"></div>
+                <span class="feature_number feature_number--dark">01</span>
+                <h4 class="third-subtitle feature_title feature_title--dark">
+                    Have high rating
+                </h4>
+                <p class="feature_p feature_p--dark">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna..
+                </p>
+            </div>
+            <div class="swiper-slide swiper-slide--dark">
+                <div class="feature_icon feature_icon--two"></div>
+                <span class="feature_number feature_number--dark">02</span>
+                <h4 class="third-subtitle feature_title feature_title--dark">
+                    Quiet Hours
+                </h4>
+                <p class="feature_p feature_p--dark">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna..
+                </p>
+            </div>
+            <div class="swiper-slide swiper-slide--dark">
+                <div class="feature_icon feature_icon--three"></div>
+                <span class="feature_number feature_number--dark">03</span>
+                <h4 class="third-subtitle feature_title feature_title--dark">
+                    Best Locations
+                </h4>
+                <p class="feature_p feature_p--dark">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna..
+                </p>
+            </div>
+            <div class="swiper-slide swiper-slide--dark">
+                <div class="feature_icon feature_icon--four"></div>
+                <span class="feature_number feature_number--dark">04</span>
+                <h4 class="third-subtitle feature_title feature_title--dark">
+                    Free Cancellation
+                </h4>
+                <p class="feature_p feature_p--dark">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna..
+                </p>
+            </div>
+            <div class="swiper-slide swiper-slide--dark">
+                <div class="feature_icon feature_icon--five"></div>
+                <span class="feature_number feature_number--dark">05</span>
+                <h4 class="third-subtitle feature_title feature_title--dark">
+                    Payment Options
+                </h4>
+                <p class="feature_p feature_p--dark">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna..
+                </p>
+            </div>
+            <div class="swiper-slide swiper-slide--dark">
+                <div class="feature_icon feature_icon--six"></div>
+                <span class="feature_number feature_number--dark">06</span>
+                <h4 class="third-subtitle feature_title feature_title--dark">
+                    Special Offers
+                </h4>
+                <p class="feature_p feature_p--dark">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna..
+                </p>
+            </div>
         </div>
-        <div class="carousel-cell feature">
-            <div class="feature_icon feature_icon--two"></div>
-            <span class="feature_number feature_number--dark">02</span>
-            <h4 class="third-subtitle feature_title feature_title--dark">
-                Quiet Hours
-            </h4>
-            <p class="feature_p feature_p--dark">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna..
-            </p>
-        </div>
-        <div class="carousel-cell feature">
-            <div class="feature_icon feature_icon--three"></div>
-            <span class="feature_number feature_number--dark">03</span>
-            <h4 class="third-subtitle feature_title feature_title--dark">
-                Best Locations
-            </h4>
-            <p class="feature_p feature_p--dark">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna..
-            </p>
-        </div>
-        <div class="carousel-cell feature">
-            <div class="feature_icon feature_icon--four"></div>
-            <span class="feature_number feature_number--dark">04</span>
-            <h4 class="third-subtitle feature_title feature_title--dark">
-                Free Cancellation
-            </h4>
-            <p class="feature_p feature_p--dark">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna..
-            </p>
-        </div>
-        <div class="carousel-cell feature">
-            <div class="feature_icon feature_icon--five"></div>
-            <span class="feature_number feature_number--dark">05</span>
-            <h4 class="third-subtitle feature_title feature_title--dark">
-                Payment Options
-            </h4>
-            <p class="feature_p feature_p--dark">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna..
-            </p>
-        </div>
-        <div class="carousel-cell feature">
-            <div class="feature_icon feature_icon--six"></div>
-            <span class="feature_number feature_number--dark">06</span>
-            <h4 class="third-subtitle feature_title feature_title--dark">
-                Special Offers
-            </h4>
-            <p class="feature_p feature_p--dark">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna..
-            </p>
-        </div>
+        <!-- If we need pagination -->
+    <div class="facilities-swiper-pagination facilities-swiper-pagination--dark " id="facilities-swiper-pagination"></div>
     </div>
 </section>
 <section class="counter">

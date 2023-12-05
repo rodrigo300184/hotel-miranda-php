@@ -18,6 +18,8 @@
     margin: 0 auto;
     padding-top: 20px;
     text-align: center; }
+    .facilities-swiper-pagination--dark {
+      padding-top: 40px; }
   .facilities-swiper .swiper-pagination-bullet-active {
     background-color: #bead8e; }
   .facilities-swiper .swiper-slide {
@@ -36,6 +38,10 @@
   height: 100%;
   /* Imágenes se ajustan a la altura del contenedor */
   max-height: 223px; }
+.swiper-slide--dark {
+  background: #292929;
+  padding-left: 20px;
+  padding-bottom: 270px; }
 
 .swiper-btn-prev {
   position: absolute;
@@ -253,6 +259,9 @@
     height: 100%;
     /* Imágenes se ajustan a la altura del contenedor */
     max-height: 223px; }
+  .swiper-slide--dark {
+    padding-left: 50px;
+    padding-bottom: 20px; }
 
   .rooms-related-swiper {
     margin: 0 auto;
@@ -917,7 +926,32 @@ body {
     width: 140px; } }
 @media only screen and (min-width: 1000px) {
   .bbq--off {
-    display: flex; } }
+    display: flex; }
+
+  .amenities {
+    max-width: 1200px; }
+    .amenities_container {
+      justify-content: center; }
+      .amenities_container_item {
+        height: 200px;
+        width: 200px; }
+        .amenities_container_item-breakfast {
+          height: 64px;
+          width: 74px; }
+        .amenities_container_item-pickup {
+          padding-top: 10px;
+          height: 67px;
+          width: 72px;
+          color: #bead8e; }
+        .amenities_container_item-guide {
+          height: 66px;
+          width: 67px; }
+        .amenities_container_item-bbq {
+          height: 66px;
+          width: 64px; }
+        .amenities_container_item-luxury {
+          height: 66px;
+          width: 66px; } }
 header {
   position: fixed;
   display: flex;
@@ -1391,6 +1425,34 @@ header {
     line-height: 24px;
     margin: 26px 0 16px; }
 
+@media only screen and (min-width: 1000px) {
+  .about {
+    padding: 120px 10% 70px;
+    max-width: 3000px; }
+    .about-title {
+      padding-bottom: 20px; }
+    .about-paragraph {
+      margin: 60px auto 0;
+      max-width: 1200px;
+      font-size: 72px; }
+    .about-video {
+      margin: 0 auto;
+      max-width: 1200px; }
+      .about-video iframe {
+        min-height: 650px; }
+
+  .restaurant {
+    margin: 40px auto 100px;
+    max-width: 1200px; }
+    .restaurant_container {
+      width: 1200px;
+      flex-direction: row;
+      gap: 57px; }
+      .restaurant_container img {
+        width: 530px;
+        height: 420px; }
+      .restaurant_container_text {
+        padding-right: 60px; } }
 .rooms {
   padding: 48px 20px 0px; }
 

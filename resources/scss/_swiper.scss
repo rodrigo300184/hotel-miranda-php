@@ -14,6 +14,9 @@
     margin: 0 auto;
     padding-top: 20px;
     text-align: center;
+    &--dark{
+      padding-top: 40px;
+    }
   }
 
   .swiper-pagination-bullet-active {
@@ -35,6 +38,11 @@
     width: 100%; /* Imágenes se ajustan al ancho del contenedor */
     height: 100%; /* Imágenes se ajustan a la altura del contenedor */
     max-height: 223px;
+  }
+  &--dark {
+    background: #292929;
+    padding-left:20px;
+    padding-bottom: 270px;
   }
 }
 
@@ -286,6 +294,10 @@
       width: 100%; /* Imágenes se ajustan al ancho del contenedor */
       height: 100%; /* Imágenes se ajustan a la altura del contenedor */
       max-height: 223px;
+    }
+    &--dark {
+      padding-left: 50px;
+      padding-bottom: 20px;
     }
   }
   .rooms-related-swiper {
