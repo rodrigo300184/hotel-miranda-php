@@ -23,7 +23,7 @@
   <form action="/rooms.php" method="GET" class="availability_form">
     <div class="availability_item">
       <label class="label-text" for="arrivalDate">Arrival Date</label>
-      <input class="availability_input" id="arrivalDate" name="arrivalDate" type="date" required/>
+      <input class="availability_input" id="arrivalDate" name="arrivalDate" type="date" required />
     </div>
     <div class="availability_item availability_item_left-margin">
       <label class="label-text" for="departureDate">Departure Date</label>
@@ -142,22 +142,29 @@
 </section>
 <!-- video Section -->
 <section class="video-section">
-  <h2 class="subtitle video-section-subtitle">INTRO VIDEO</h2>
-  <h1 class="main-title main-title-white video-section-title">
-    Meet With Our Luxury Place.
-  </h1>
-  <p class="video-section-description">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat you have to understand this.
-  </p>
-  <div class="video-container">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Bu3Doe45lcU?si=_OomfvosXdgaSATd&amp;start=25&end=80;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <div class="intro-container">
+    <div class="intro-container-text">
+      <h2 class="subtitle video-section-subtitle">INTRO VIDEO</h2>
+      <h1 class="main-title main-title-white video-section-title">
+        Meet With Our Luxury Place.
+      </h1>
+      <p class="video-section-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat you have to understand this.
+      </p>
+      <a href="/rooms.php" class="button button_small button_small--gold video-button--in">
+        <div class="button_text">BOOK NOW</div>
+      </a>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Bu3Doe45lcU?si=_OomfvosXdgaSATd&amp;start=25&end=80;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
   </div>
-  <a href="" class="button button_small button_small--gold">
-    <div class="button_text">BOOK NOW</div>
-  </a>
+  <a href="/rooms.php" class="button button_small button_small--gold video-button--out">
+        <div class="button_text">BOOK NOW</div>
+      </a>
 </section>
 <!-- Facilities Section -->
 <section class="facilities">

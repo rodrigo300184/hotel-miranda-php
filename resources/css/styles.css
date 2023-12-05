@@ -1541,6 +1541,10 @@ header {
   background-color: #111111;
   padding: 64px 20px 48px 20px; }
 
+.intro-container {
+  display: flex;
+  flex-direction: column; }
+
 .video-section-subtitle {
   color: #bead8e; }
 
@@ -1560,13 +1564,39 @@ header {
   margin: 0 auto;
   width: 335px;
   height: 270px;
-  overflow: hidden;
   margin-bottom: 36px; }
+
+.video-button--in {
+  display: none; }
+.video-button--out {
+  display: flex; }
 
 @media only screen and (max-width: 360px) {
   .video-container {
     width: 280px;
     height: 180px; } }
+@media only screen and (min-width: 1000px) {
+  .video-section {
+    position: relative;
+    padding: 130px 19%;
+    max-width: 3000px;
+    background: linear-gradient(to right, #111111 70%, #bead8e 70% 75%); }
+
+  .intro-container {
+    flex-direction: row;
+    gap: 30px; }
+    .intro-container-text {
+      max-width: 42%; }
+
+  .video-container {
+    min-width: 570px;
+    height: 460px;
+    margin-bottom: 36px; }
+
+  .video-button--in {
+    display: flex; }
+  .video-button--out {
+    display: none; } }
 .facilities {
   margin: 0 auto;
   max-width: 500px;
