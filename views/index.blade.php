@@ -231,6 +231,7 @@
     <div class="facilities-swiper-pagination" id="facilities-swiper-pagination"></div>
   </div>
 </section>
+<!-- Menu Section -->
 <section class="menu">
   <div class="menu-swiper-container">
     <img src="./resources/icons/menu/donnut.svg" alt="" class="menu-icon" />
@@ -308,6 +309,78 @@
             <img style="height: 120px; width: 120px; object-fit: cover" src="./resources/assets/menu/Cheese Plate.jpg" alt="Cheese Plate" />
             <div>
               <h2 class="third-subtitle menu-food-title">Cheese Plate</h2>
+              <p class="menu-food-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                sed do eiusmod tempor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="menu-container">
+            <img style="height: 120px; width: 120px; object-fit: cover" src="/resources/assets/menu/rice.jpg" alt="Rice Plate" />
+            <div>
+              <h2 class="third-subtitle menu-food-title">Rice Plate</h2>
+              <p class="menu-food-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                sed do eiusmod tempor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="menu-container">
+            <img style="height: 120px; width: 120px; object-fit: cover" src="/resources/assets/menu/sushi.jpg" alt="Sushi Plate" />
+            <div>
+              <h2 class="third-subtitle menu-food-title">Sushi</h2>
+              <p class="menu-food-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                sed do eiusmod tempor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="menu-container">
+            <img style="height: 120px; width: 120px; object-fit: cover" src="/resources/assets/menu/meat.jpg" alt="Red Meat" />
+            <div>
+              <h2 class="third-subtitle menu-food-title">Red Meat</h2>
+              <p class="menu-food-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                sed do eiusmod tempor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="menu-container">
+            <img style="height: 120px; width: 120px; object-fit: cover" src="/resources/assets/menu/pork.jpg" alt="Pork Meat" />
+            <div>
+              <h2 class="third-subtitle menu-food-title">Pork</h2>
+              <p class="menu-food-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                sed do eiusmod tempor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="menu-container">
+            <img style="height: 120px; width: 120px; object-fit: cover" src="/resources/assets/menu/salads.jpg" alt="Salads Plate" />
+            <div>
+              <h2 class="third-subtitle menu-food-title">Salads</h2>
+              <p class="menu-food-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                sed do eiusmod tempor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="menu-container">
+            <img style="height: 120px; width: 120px; object-fit: cover" src="/resources/assets/menu/pizza.jpg" alt="pizza" />
+            <div>
+              <h2 class="third-subtitle menu-food-title">Italian Pizza</h2>
               <p class="menu-food-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adip isicing elit,
                 sed do eiusmod tempor.

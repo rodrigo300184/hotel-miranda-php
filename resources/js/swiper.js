@@ -47,6 +47,17 @@ const menuSwiper = new Swiper(".menu-swiper", {
     fill: "row",
     rows: 3,
   },
+  breakpoints: {
+    '1000': {
+      spaceBetween: 20,
+      centeredSlides: false,
+      slidesPerView: 2,
+      grid: {
+        fill: 'row',
+        rows: 3,
+      },
+    }
+  },
   navigation: {
     nextEl: ".menu-swiper-btn-next",
     prevEl: ".menu-swiper-btn-prev",
