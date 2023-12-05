@@ -3,8 +3,7 @@
   max-width: 600px;
   position: relative;
   top: 70px;
-  padding-left: 20px;
-  padding-bottom: 76px;
+  padding: 0 10% 76px;
   background-color: $banner-background-color;
 }
 
@@ -27,6 +26,5 @@
 @media only screen and (min-width: 1000px) {
   .banner {
     max-width: 3000px;
-    padding-left: 19%;
   }
 }
