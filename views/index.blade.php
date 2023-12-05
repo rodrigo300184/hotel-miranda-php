@@ -409,15 +409,6 @@
           <img src="./resources/assets/menu/food2.jpg" alt="spaguetti" />
         </div>
         <div class="swiper-slide">
-          <img src="./resources/assets/menu/food3.jpg" alt="spaguetti" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./resources/assets/menu/food4.jpg" alt="spaguetti" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./resources/assets/menu/food5.jpg" alt="spaguetti" />
-        </div>
-        <div class="swiper-slide">
           <img src="./resources/assets/menu/food6.jpg" alt="spaguetti" />
         </div>
       </div>

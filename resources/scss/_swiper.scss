@@ -19,7 +19,7 @@
   .swiper-pagination-bullet-active {
     background-color: $gold;
   }
-  .swiper-slide{
+  .swiper-slide {
     max-width: 370px;
     padding-top: 60px;
   }
@@ -71,7 +71,7 @@
     top: auto;
   }
 }
-.menu-swiper{
+.menu-swiper {
   overflow: hidden;
 }
 
@@ -102,6 +102,7 @@
 }
 
 .food-images-swiper {
+  overflow: hidden;
   position: relative;
   max-width: 375px;
   margin: 0 auto;
@@ -109,7 +110,6 @@
 .food-swiper {
   position: relative;
   margin: 120px auto 0px;
-  overflow: hidden;
 
   .swiper-slide img {
     width: 100%; /* Imágenes se ajustan al ancho del contenedor */
@@ -292,8 +292,24 @@
     margin: 0 auto;
     min-width: 1200px;
   }
-  .facilities-swiper{
+  .facilities-swiper {
     max-width: 1200px;
     height: fit-content;
+  }
+  .menu-swiper-btn-prev {
+    top: 20px;
+    height: 70px;
+    width: 70px;
+    right: 120px;
+    background-size: 24px 24px;
+  }
+  .menu-swiper-btn-next {
+    top: 20px;
+    height: 70px;
+    width: 70px;
+    background-size: 24px 24px;
+  }
+  .food-images-swiper {
+    max-width: 1200px;
   }
 }

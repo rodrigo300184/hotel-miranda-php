@@ -95,14 +95,14 @@
   z-index: 1; }
 
 .food-images-swiper {
+  overflow: hidden;
   position: relative;
   max-width: 375px;
   margin: 0 auto; }
 
 .food-swiper {
   position: relative;
-  margin: 120px auto 0px;
-  overflow: hidden; }
+  margin: 120px auto 0px; }
   .food-swiper .swiper-slide img {
     width: 100%;
     /* Imágenes se ajustan al ancho del contenedor */
@@ -260,7 +260,23 @@
 
   .facilities-swiper {
     max-width: 1200px;
-    height: fit-content; } }
+    height: fit-content; }
+
+  .menu-swiper-btn-prev {
+    top: 20px;
+    height: 70px;
+    width: 70px;
+    right: 120px;
+    background-size: 24px 24px; }
+
+  .menu-swiper-btn-next {
+    top: 20px;
+    height: 70px;
+    width: 70px;
+    background-size: 24px 24px; }
+
+  .food-images-swiper {
+    max-width: 1200px; } }
 html,
 * {
   color: inherit;
