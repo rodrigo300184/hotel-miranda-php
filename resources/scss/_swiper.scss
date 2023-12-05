@@ -5,10 +5,24 @@
   max-width: 375px;
 }
 
-.feature-swiper {
+.facilities-swiper {
   width: 100%;
+  margin: 30px auto;
   max-width: 375px;
-  height: 244px;
+  height: 300px;
+  &-pagination {
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $gold;
+  }
+  .swiper-slide{
+    max-width: 370px;
+    padding-top: 60px;
+  }
 }
 
 .swiper-slide {
@@ -56,40 +70,6 @@
   &--room {
     top: auto;
   }
-}
-
-.carousel {
-  background-color: $white;
-  &--dark {
-    margin-top: 24px;
-    background-color: $light-black;
-  }
-}
-
-.carousel-cell {
-  width: 100%;
-  margin-top: 32px;
-}
-
-.flickity-button {
-  display: none;
-  background: transparent;
-}
-/* position dots in carousel
-.flickity-page-dots {
-  bottom: -20px !important;
-} */
-
-/* white circles */
-.flickity-page-dots .dot {
-  width: 7px !important;
-  height: 7px !important;
-  opacity: 1;
-  background: transparent;
-}
-/* fill-in selected dot */
-.flickity-page-dots .dot.is-selected {
-  background: $gold;
 }
 
 .menu-swiper-btn-prev {
@@ -238,7 +218,6 @@
   position: relative;
   max-width: 375px;
   overflow: hidden;
- 
 
   &-btn-next {
     position: absolute;
@@ -309,5 +288,9 @@
   .rooms-related-swiper {
     margin: 0 auto;
     min-width: 1200px;
+  }
+  .facilities-swiper{
+    max-width: 1200px;
+    height: fit-content;
   }
 }

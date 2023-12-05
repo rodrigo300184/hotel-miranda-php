@@ -11,9 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Old+Standard+TT&family=Roboto&display=swap" rel="stylesheet" />
-    <!-- Flickity -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>

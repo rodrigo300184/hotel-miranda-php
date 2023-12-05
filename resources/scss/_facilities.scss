@@ -1,6 +1,7 @@
 .facilities {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 375px;
+  overflow: hidden;
   padding: 60px 24px;
   &--dark {
     padding-top: 48px;
@@ -77,6 +78,8 @@
     }
   }
   &_p {
+    margin-bottom: 30px;
+    max-width: 250px;
     font-family: $archivo-font;
     color: $grey;
     font-size: 14px;
@@ -99,4 +102,11 @@
       font-size: 110px;
     }
   }
+}
+@media only screen and (min-width: 1000px) {
+  .facilities {
+    padding: 60px 10%;
+    max-width: 3000px;
+  }
+  
 }

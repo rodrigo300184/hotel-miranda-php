@@ -9,10 +9,20 @@
   width: 100%;
   max-width: 375px; }
 
-.feature-swiper {
+.facilities-swiper {
   width: 100%;
+  margin: 30px auto;
   max-width: 375px;
-  height: 244px; }
+  height: 300px; }
+  .facilities-swiper-pagination {
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center; }
+  .facilities-swiper .swiper-pagination-bullet-active {
+    background-color: #bead8e; }
+  .facilities-swiper .swiper-slide {
+    max-width: 370px;
+    padding-top: 60px; }
 
 .swiper-slide-room img {
   width: 100%;
@@ -55,35 +65,6 @@
   z-index: 1; }
   .swiper-btn-next--room {
     top: auto; }
-
-.carousel {
-  background-color: #fff; }
-  .carousel--dark {
-    margin-top: 24px;
-    background-color: #292929; }
-
-.carousel-cell {
-  width: 100%;
-  margin-top: 32px; }
-
-.flickity-button {
-  display: none;
-  background: transparent; }
-
-/* position dots in carousel
-.flickity-page-dots {
-  bottom: -20px !important;
-} */
-/* white circles */
-.flickity-page-dots .dot {
-  width: 7px !important;
-  height: 7px !important;
-  opacity: 1;
-  background: transparent; }
-
-/* fill-in selected dot */
-.flickity-page-dots .dot.is-selected {
-  background: #bead8e; }
 
 .menu-swiper-btn-prev {
   position: absolute;
@@ -272,7 +253,11 @@
 
   .rooms-related-swiper {
     margin: 0 auto;
-    min-width: 1200px; } }
+    min-width: 1200px; }
+
+  .facilities-swiper {
+    max-width: 1200px;
+    height: fit-content; } }
 html,
 * {
   color: inherit;
@@ -296,6 +281,8 @@ body {
     color: #fff; }
   .main-title-black {
     color: #111111; }
+  .main-title-centered {
+    text-align: center; }
 
 .subtitle {
   font-family: Archivo;
@@ -1596,7 +1583,8 @@ header {
     display: none; } }
 .facilities {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 375px;
+  overflow: hidden;
   padding: 60px 24px; }
   .facilities--dark {
     padding-top: 48px;
@@ -1657,6 +1645,8 @@ header {
     .feature_title--dark {
       color: #fff; }
   .feature_p {
+    margin-bottom: 30px;
+    max-width: 250px;
     font-family: Archivo, sans-serif;
     color: #777777;
     font-size: 14px;
@@ -1672,6 +1662,10 @@ header {
     margin-bottom: 20px; }
   .feature_number {
     font-size: 110px; } }
+@media only screen and (min-width: 1000px) {
+  .facilities {
+    padding: 60px 10%;
+    max-width: 3000px; } }
 .menu {
   margin: 0 auto;
   max-width: 600px;

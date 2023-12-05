@@ -16,8 +16,29 @@ const roomsSwiper = new Swiper(".rooms-swiper", {
   }
 });
 
-var flkty = new Flickity('.carousel', {
-  autoPlay: true
+const facilitiesSwiper = new Swiper(".facilities-swiper", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    '1000': {
+      centeredSlides: false,
+      slidesPerView: 3,
+      grid: {
+        fill: 'row',
+        rows: 2,
+      },
+    }
+  },
+  // If we need pagination
+  pagination: {
+    el: "#facilities-swiper-pagination",
+    clickable: true,
+  },
 });
 
 const menuSwiper = new Swiper(".menu-swiper", {
@@ -105,10 +126,10 @@ const roomsPageSwiper = new Swiper(".rooms-page-swiper", {
 const roomsRelatedSwiper = new Swiper(".rooms-related-swiper", {
   spaceBetween: 20,
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     1000: {
       slidesPerView: 3,

@@ -171,9 +171,10 @@
 <!-- Facilities Section -->
 <section class="facilities">
  <h2 class="subtitle facilities-subtitle">FACILITIES</h2>
- <h1 class="main-title main-title-black">Core Features</h1>
- <div class="carousel" id="carousel--white">
- <div class="carousel-cell feature">
+ <h1 class="main-title main-title-centered main-title-black">Core Features</h1>
+ <div class="facilities-swiper">
+ <div class="swiper-wrapper">
+ <div class="swiper-slide">
  <div class="feature_icon feature_icon--one"></div>
  <span class="feature_number">01</span>
  <h4 class="third-subtitle feature_title">Have high rating</h4>
@@ -182,7 +183,7 @@
  eiusmod tempor incididunt ut labore et dolore magna..
  </p>
  </div>
- <div class="carousel-cell feature">
+ <div class="swiper-slide">
  <div class="feature_icon feature_icon--two"></div>
  <span class="feature_number">02</span>
  <h4 class="third-subtitle feature_title">Quiet Hours</h4>
@@ -191,7 +192,7 @@
  eiusmod tempor incididunt ut labore et dolore magna..
  </p>
  </div>
- <div class="carousel-cell feature">
+ <div class="swiper-slide">
  <div class="feature_icon feature_icon--three"></div>
  <span class="feature_number">03</span>
  <h4 class="third-subtitle feature_title">Best Locations</h4>
@@ -200,7 +201,7 @@
  eiusmod tempor incididunt ut labore et dolore magna..
  </p>
  </div>
- <div class="carousel-cell feature">
+ <div class="swiper-slide">
  <div class="feature_icon feature_icon--four"></div>
  <span class="feature_number">04</span>
  <h4 class="third-subtitle feature_title">Free Cancellation</h4>
@@ -209,7 +210,7 @@
  eiusmod tempor incididunt ut labore et dolore magna..
  </p>
  </div>
- <div class="carousel-cell feature">
+ <div class="swiper-slide">
  <div class="feature_icon feature_icon--five"></div>
  <span class="feature_number">05</span>
  <h4 class="third-subtitle feature_title">Payment Options</h4>
@@ -218,7 +219,7 @@
  eiusmod tempor incididunt ut labore et dolore magna..
  </p>
  </div>
- <div class="carousel-cell feature">
+ <div class="swiper-slide">
  <div class="feature_icon feature_icon--six"></div>
  <span class="feature_number">06</span>
  <h4 class="third-subtitle feature_title">Special Offers</h4>
@@ -227,6 +228,9 @@
  eiusmod tempor incididunt ut labore et dolore magna..
  </p>
  </div>
+ </div>
+ <!-- If we need pagination -->
+ <div class="facilities-swiper-pagination" id="facilities-swiper-pagination"></div>
  </div>
 </section>
 <section class="menu">
