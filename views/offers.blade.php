@@ -97,51 +97,64 @@
     <div class="popular-rooms">
         <h3 class="popular-title">POPULAR LIST</h3>
         <h2 class="room-luxury-title room-luxury-title--white">Popular Rooms</h2>
-        <div class="room_amenities room_amenities--down">
-            <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" class="room_amenities_icon" />
-            <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" class="room_amenities_icon" />
-            <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" class="room_amenities_icon" />
-            <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" class="room_amenities_icon" />
-            <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" class="room_amenities_icons" />
-            <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" class="room_amenities_icon" />
-            <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" class="room_amenities_icon" />
-        </div>
-        <div class="swiper rooms-swiper">
+
+        <div class="rooms-related-swiper rooms-related-swiper-popular">
             <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide-room">
-                    <img src="./resources/assets/rooms/room1.jpg" alt="room" />
-                </div>
-                <div class="swiper-slide swiper-slide-room">
-                    <img src="./resources/assets/rooms/room2.jpg" alt="room" />
-                </div>
-                <div class="swiper-slide swiper-slide-room">
-                    <img src="./resources/assets/rooms/room3.jpg" alt="room" />
-                </div>
+                @if (isset($popularRooms))
+                @foreach ($popularRooms as $popularRoom)
+                <div class="swiper-slide swiper-slide-room-related">
+                    <div class="room_amenities room_amenities--down">
+                        @if (strpos($popularRoom['all_amenities'], 'Extra Bed') !== false)
+                        <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
+                        @endif
+                        @if (strpos($popularRoom['all_amenities'], 'Free Wifi') !== false)
+                        <img src="./resources/icons/rooms/wifi.svg" alt="wifiIcon" />
+                        @endif
+                        @if (strpos($popularRoom['all_amenities'], 'Automobile') !== false)
+                        <img src="./resources/icons/rooms/automobile.svg" alt="carIcon" />
+                        @endif
+                        @if (strpos($popularRoom['all_amenities'], 'Air Conditioner') !== false)
+                        <img src="./resources/icons/rooms/air-conditioner.svg" alt="acIcon" />
+                        @endif
+                        @if (strpos($popularRoom['all_amenities'], 'Gym') !== false)
+                        <img src="./resources/icons/rooms/gym.svg" alt="gymIcon" />
+                        @endif
+                        @if (strpos($popularRoom['all_amenities'], 'No Smoking') !== false)
+                        <img src="./resources/icons/rooms/no-smoking.svg" alt="nonsmokeIcon" />
+                        @endif
+                        @if (strpos($popularRoom['all_amenities'], 'Cocktails') !== false)
+                        <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
+                        @endif
+                    </div>
+                    <img class="swiper-slide-room-related-img" src="{{$popularRoom['all_photos']}}" alt="room" />
+                    <div class="room-container room-container--popular">
+                        <div class="room-name">
+                            <h4 class="third-subtitle room-subtitle-related">
+                                {{$popularRoom['room_type']}}
+                            </h4>
+                            <p class="room-description">
+                                {{$popularRoom['description']}}
+                            </p>
+                            <div class="room-price">
+                                <form action="/room_details.php" method="GET">
+                                    <span class="room-price"> {{$popularRoom['price']}}</span>
+                                    <span class="room-price">/Night</span>
+                                    <input type="hidden" name="room_id" value="{{$popularRoom['id']}}" />
+                                    <button type="submit" class="room-booking-now">Booking Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>@endforeach
+                @else
+                <p>No rooms available.</p>
+                @endif
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination pagination-swiper"></div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-btn-prev"></div>
-            <div class="swiper-btn-next"></div>
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="rooms-related-swiper-btn-prev rooms-related-swiper-btn-prev-popular"></div>
+            <div class="rooms-related-swiper-btn-next rooms-related-swiper-btn-next-popular"></div>
         </div>
-        <div class="room-container room-container--popular">
-            <div class="room-name">
-                <h4 class="third-subtitle room-subtitle-related">
-                    Minimal Duplex Room
-                </h4>
-                <p class="room-description">
-                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
-                    eiusmod tempor.
-                </p>
-                <div class="room-price">
-                    <span class="room-price-related"> $345</span>
-                    <span class="room-price-related">/Night</span>
-                    <a href="./room_details.php" class="room-booking-now">Booking Now</a>
-                </div>
-            </div>
-        </div>
+
     </div>
 </section>
 

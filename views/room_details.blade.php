@@ -204,7 +204,6 @@
   <section class="related-rooms">
     <h2 class="third-subtitle">Related Rooms</h2>
     <div class="room-details-bar"></div>
-
     <div class="rooms-related-swiper">
       <div class="swiper-wrapper">
         @if (isset($relatedRooms))
@@ -267,8 +266,6 @@
       <div class="rooms-related-swiper-btn-prev"></div>
       <div class="rooms-related-swiper-btn-next"></div>
     </div>
-
-
   </section>
 </section>
 

@@ -304,6 +304,25 @@
   .rooms-related-swiper {
     margin: 0 auto;
     min-width: 1200px;
+    &-btn-prev-popular {
+      top: 255px;
+      height: 70px;
+      width: 70px;
+      left: -15px;
+      background-size: 24px 24px;
+      box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.25);
+    }
+    &-popular{
+      margin-top: 80px;
+    }
+    &-btn-next-popular {
+      top: 255px;
+      height: 70px;
+      width: 70px;
+      right: -15px;
+      background-size: 24px 24px;
+      box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.25);
+    }
   }
   .facilities-swiper {
     max-width: 1200px;

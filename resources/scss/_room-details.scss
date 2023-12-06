@@ -230,6 +230,10 @@
   .room-luxury-title {
     font-size: 48px;
     margin: 0;
+    &--white{
+      margin-top: 84px;
+      font-size: 80px;
+    }
   }
   .room-details-form {
     position: relative;

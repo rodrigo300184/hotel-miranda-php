@@ -267,6 +267,22 @@
   .rooms-related-swiper {
     margin: 0 auto;
     min-width: 1200px; }
+    .rooms-related-swiper-btn-prev-popular {
+      top: 255px;
+      height: 70px;
+      width: 70px;
+      left: -15px;
+      background-size: 24px 24px;
+      box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.25); }
+    .rooms-related-swiper-popular {
+      margin-top: 80px; }
+    .rooms-related-swiper-btn-next-popular {
+      top: 255px;
+      height: 70px;
+      width: 70px;
+      right: -15px;
+      background-size: 24px 24px;
+      box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.25); }
 
   .facilities-swiper {
     max-width: 1200px;
@@ -635,6 +651,9 @@ body {
   .room-luxury-title {
     font-size: 48px;
     margin: 0; }
+    .room-luxury-title--white {
+      margin-top: 84px;
+      font-size: 80px; }
 
   .room-details-form {
     position: relative;
@@ -682,7 +701,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  width: 80%;
   margin-bottom: 16px; }
 
 .offers-inner-container {
@@ -732,7 +750,7 @@ body {
   line-height: 24px; }
 
 .offers-amenities {
-  margin: 25px; }
+  margin: 25px 5px; }
 
 .popular {
   padding: 48px 20px 0px;
@@ -1565,7 +1583,8 @@ header {
     max-height: 250px; }
   .room-container--popular {
     padding-top: 49px;
-    top: -20px;
+    padding-bottom: 28px;
+    top: -4px;
     width: 100%;
     max-width: 375px;
     z-index: 1; }
@@ -1591,7 +1610,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  min-height: 48px; }
+  min-height: 72px; }
 
 .room-price {
   color: #bead8e;
@@ -1659,6 +1678,14 @@ header {
       height: 180px; }
     .room-container--down {
       width: 375px; }
+    .room-container--popular {
+      padding-top: 49px;
+      padding-bottom: 28px;
+      top: -4px;
+      width: 100%;
+      max-width: 100%;
+      min-height: 250px;
+      z-index: 1; }
 
   .room_offer_title {
     position: absolute;
