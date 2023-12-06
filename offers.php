@@ -2,7 +2,7 @@
 
 require_once('setup.php');
 
-$sqlWithDiscounts = "
+$sqlWithDiscount = "
   SELECT r.*, (SELECT GROUP_CONCAT(DISTINCT photos) FROM photo WHERE room_id = r.id) AS all_photos, GROUP_CONCAT(DISTINCT a.amenities) AS all_amenities
   FROM room r
   LEFT JOIN amenities_has_room ahr ON r.id = ahr.room_id
@@ -11,7 +11,7 @@ $sqlWithDiscounts = "
   GROUP BY r.id
   LIMIT 5;";
 
-$sqlWithoutDiscounts = "
+$sqlWithoutDiscount = "
   SELECT r.*, (SELECT GROUP_CONCAT(DISTINCT photos) FROM photo WHERE room_id = r.id) AS all_photos, GROUP_CONCAT(DISTINCT a.amenities) AS all_amenities
   FROM room r
   LEFT JOIN amenities_has_room ahr ON r.id = ahr.room_id
@@ -20,15 +20,15 @@ $sqlWithoutDiscounts = "
   GROUP BY r.id
   LIMIT 5;";
 
-$resultWithDiscounts = $conn->query($sqlWithDiscounts);
-$resultWithoutDiscounts = $conn->query($sqlWithoutDiscounts);
+$resultWithDiscount = $conn->query($sqlWithDiscount);
+$resultWithoutDiscount = $conn->query($sqlWithoutDiscount);
 
-$roomsWithDiscounts = $resultWithDiscounts->fetch_all(MYSQLI_ASSOC);
-$popularRooms = $resultWithoutDiscounts->fetch_all(MYSQLI_ASSOC);
+$roomsWithDiscount = $resultWithDiscount->fetch_all(MYSQLI_ASSOC);
+$popularRooms = $resultWithoutDiscount->fetch_all(MYSQLI_ASSOC);
 
-foreach ($roomsWithDiscounts as &$room) {
+foreach ($roomsWithDiscount as &$room) {
   $room['priceWithDiscount'] = intval($room['price'] - ($room['price'] * ($room['discount'] / 100)));
 }
 
-echo $blade->run('offers', ['roomsWithDiscounts' => $roomsWithDiscounts, 'popularRooms' => $popularRooms]);
+echo $blade->run('offers', ['roomsWithDiscount' => $roomsWithDiscount, 'popularRooms' => $popularRooms]);
 $conn->close();

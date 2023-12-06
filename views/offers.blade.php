@@ -16,22 +16,24 @@
 </section>
 <!-- Offers Section -->
 <section class="offers">
-    @for ($i = 0; $i < 4; $i++) <div class="offers-card">
+    @if (isset($roomsWithDiscount) && count($roomsWithDiscount) > 0)
+    @foreach ($roomsWithDiscount as $roomWithDiscount)
+    <div class="offers-card">
         <div class="offers-container">
             <div class="offers-inner-container">
                 <div>
-                    <span class="offer-price offer-price-value"> $500</span>
+                    <span class="offer-price offer-price-value"> ${{$roomWithDiscount['price']}}</span>
                     <span class="offer-price offer-price-night">/Night</span>
                 </div>
                 <div>
                     <span class="offer-price offer-price-value offer-price-value--discount">
-                        $345</span>
+                        ${{$roomWithDiscount['priceWithDiscount']}}</span>
                     <span class="offer-price offer-price-value offer-price-night--discount">/Night</span>
                 </div>
             </div>
         </div>
-        <h2 class="subtitle room-details-subtitle">DOUBLE BED</h2>
-        <h1 class="room-luxury-title">Luxury Double Bed</h1>
+        <h2 class="subtitle room-details-subtitle">ROOM CLASS</h2>
+        <h1 class="room-luxury-title">{{$roomWithDiscount['room_type']}}</h1>
         <p class="offers-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -39,6 +41,7 @@
             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend
             erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
+
         <div class="offers-amenities">
             <div class="amenities-container">
                 <div class="amenities-inner-container">
@@ -87,11 +90,15 @@
                 </div>
             </div>
         </div>
-        <a href="" class="button button_small button_small--gold">
-            <div class="button_text">BOOK NOW</div>
-        </a>
-        </div>
-        @endfor
+        <form action="/room_details.php" method="GET">
+            <input type="hidden" name="room_id" value="{{$roomWithDiscount['id']}}" />
+            <button type="submit" class="button button_small button_small--gold button_text">Book Now</button>
+        </form>
+    </div>
+    @endforeach
+    @else
+    <p>No Offers</p>
+    @endif
 </section>
 <section class="popular">
     <div class="popular-rooms">
