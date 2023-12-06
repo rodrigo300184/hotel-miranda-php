@@ -10,10 +10,10 @@ const roomsSwiper = new Swiper(".rooms-swiper", {
     prevEl: ".swiper-btn-prev",
   },
   breakpoints: {
-    '1000':{
+    1000: {
       initialSlide: 1,
-    }
-  }
+    },
+  },
 });
 
 const facilitiesSwiper = new Swiper(".facilities-swiper", {
@@ -25,14 +25,14 @@ const facilitiesSwiper = new Swiper(".facilities-swiper", {
     delay: 5000,
   },
   breakpoints: {
-    '1000': {
+    1000: {
       centeredSlides: false,
       slidesPerView: 3,
       grid: {
-        fill: 'row',
+        fill: "row",
         rows: 2,
       },
-    }
+    },
   },
   // If we need pagination
   pagination: {
@@ -48,15 +48,15 @@ const menuSwiper = new Swiper(".menu-swiper", {
     rows: 3,
   },
   breakpoints: {
-    '1000': {
+    1000: {
       spaceBetween: 20,
       centeredSlides: false,
       slidesPerView: 2,
       grid: {
-        fill: 'row',
+        fill: "row",
         rows: 3,
       },
-    }
+    },
   },
   navigation: {
     nextEl: ".menu-swiper-btn-next",
@@ -74,10 +74,10 @@ const foodImageSwiper = new Swiper(".food-images-swiper", {
   autoplay: {
     delay: 5000,
   },
-  breakpoints:{
-    '1000': {
+  breakpoints: {
+    1000: {
       slidesPerView: 3,
-    }
+    },
   },
   // If we need pagination
   pagination: {
@@ -87,16 +87,19 @@ const foodImageSwiper = new Swiper(".food-images-swiper", {
 });
 
 const factsSwiper = new Swiper(".facts-swiper", {
-  // Optional parameters
   direction: "horizontal",
   slidesPerView: 1,
-  centeredSlides: true,
   spaceBetween: 16,
   loop: true,
   autoplay: {
     delay: 2000,
   },
-
+  breakpoints: {
+    1000: {
+      loop: false,
+      slidesPerView: 3,
+    },
+  },
   // If we need pagination
   pagination: {
     el: ".facts-swiper-pagination",
@@ -106,7 +109,7 @@ const factsSwiper = new Swiper(".facts-swiper", {
 
 const roomsPageSwiper = new Swiper(".rooms-page-swiper", {
   spaceBetween: 16,
-  slidesPerView:1,
+  slidesPerView: 1,
   grid: {
     fill: "row",
     rows: 7,

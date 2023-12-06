@@ -71,3 +71,15 @@
     background-repeat: no-repeat;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .counter {
+    padding: 120px 10%;
+    max-width: 3000px;
+    &_container {
+      margin: 40px auto 60px;
+      max-width: 1200px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}

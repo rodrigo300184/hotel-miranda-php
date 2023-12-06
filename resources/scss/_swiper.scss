@@ -14,7 +14,7 @@
     margin: 0 auto;
     padding-top: 20px;
     text-align: center;
-    &--dark{
+    &--dark {
       padding-top: 40px;
     }
   }
@@ -41,7 +41,7 @@
   }
   &--dark {
     background: #292929;
-    padding-left:20px;
+    padding-left: 20px;
     padding-bottom: 270px;
   }
 }
@@ -323,5 +323,12 @@
   }
   .food-images-swiper {
     max-width: 1200px;
+  }
+  .facts-swiper {
+    .swiper-slide img {
+      width: 100%; /* Imágenes se ajustan al ancho del contenedor */
+      height: auto; /* Imágenes se ajustan a la altura del contenedor */
+      max-width: 570px;
+    }
   }
 }

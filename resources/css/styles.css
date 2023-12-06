@@ -285,7 +285,14 @@
     background-size: 24px 24px; }
 
   .food-images-swiper {
-    max-width: 1200px; } }
+    max-width: 1200px; }
+
+  .facts-swiper .swiper-slide img {
+    width: 100%;
+    /* Imágenes se ajustan al ancho del contenedor */
+    height: auto;
+    /* Imágenes se ajustan a la altura del contenedor */
+    max-width: 570px; } }
 html,
 * {
   color: inherit;
@@ -1935,6 +1942,15 @@ header {
     background-size: cover;
     background-repeat: no-repeat; }
 
+@media only screen and (min-width: 1000px) {
+  .counter {
+    padding: 120px 10%;
+    max-width: 3000px; }
+    .counter_container {
+      margin: 40px auto 60px;
+      max-width: 1200px;
+      flex-direction: row;
+      justify-content: space-around; } }
 .footer {
   margin: 0 auto;
   max-width: 600px; }
