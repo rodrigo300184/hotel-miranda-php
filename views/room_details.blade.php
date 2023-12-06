@@ -18,58 +18,80 @@
 <!-- Rooms Sections -->
 <section class="rooms-details">
   @if (isset($room))
-
   <div class="rooms-details-container">
-    <h2 class="subtitle room-details-subtitle">ROOM CLASS</h2>
-    <h1 class="room-luxury-title">{{$room['room_type']}}</h1>
-    @if($room['offer_price'])
-    <div class="room-price room-price-left">
-      <span class="room-price-value room-price-offer">{{round($room['price'] - $room['price']*$room['discount']/100)}}</span>
-      <span class="room-price-nigth room-price-offer">/Night</span>
+    <div class="room-class-container">
+      <div class="description-container">
+        <div class="titles-container">
+          <h2 class="subtitle room-details-subtitle">ROOM CLASS</h2>
+          <h1 class="room-luxury-title">{{$room['room_type']}}</h1>
+        </div>
+        @if($room['offer_price'])
+        <div class="room-price room-price-left">
+          <span class="room-price-value room-price-offer">${{round($room['price'] - $room['price']*$room['discount']/100)}}</span>
+          <span class="room-price-nigth room-price-offer">/Night</span>
+        </div>
+        @else
+        <div class="room-price room-price-left">
+          <span class="room-price-value">${{$room['price']}}</span>
+          <span class="room-price-nigth">/Night</span>
+        </div>
+        @endif
+      </div>
+      <img class="room-details-image" src="{{$room['all_photos']}}" alt="room" />
+      <p class="room-details-paragraph room-details-paragraph--in">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+        error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+        dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore
+        magnam aliquam quaerat voluptatem.
+      </p>
+    </div>
+
+    <!-- Availability -->
+    @if($checkin && $checkout)
+    <div class="availability--white room-details-form">
+      <h2 class="availability-title">Check Availability</h2>
+      <form action="/room_details.php" method="POST" class="availability_form availability_form_rdetails" id="availabilityForm">
+        <label class="label-text label-text--black" for="checkIn">Check In</label>
+        <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="{{$checkin}}" readonly required />
+        <label class="label-text label-text--black" for="checkOut">Check Out</label>
+        <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="{{$checkout}}" readonly required />
+        <label class="label-text label-text--black" for="fullName">Full Name</label>
+        <input class="availability_input_rdetails" type="text" name="fullName" id="detailsFullName" placeholder="Type your name..." required />
+        <label class="label-text label-text--black" for="email">Email</label>
+        <input class="availability_input_rdetails" type="email" name="email" id="detailsEmail" placeholder="Type your email..." required />
+        <label class="label-text label-text--black" for="phone">Phone</label>
+        <input class="availability_input_rdetails" type="text" name="phone" id="detailsPhone" placeholder="Type your phone..." required />
+        <label class="label-text label-text--black" for="detailsMessage">Message (Special resquest)</label>
+        <textarea class="availability_text-area" name="message" id="detailsMessage" cols="30" rows="3" placeholder="Type your message..." required></textarea>
+        <input class="button button_big button_big--gold button_text" type="submit" value="BOOK NOW" />
+      </form>
     </div>
     @else
-    <div class="room-price room-price-left">
-      <span class="room-price-value">{{$room['price']}}</span>
-      <span class="room-price-nigth">/Night</span>
+    <div class="availability--white room-details-form">
+      <h2 class="availability-title">Check Availability</h2>
+      <form action="/room_details.php" method="GET" class="availability_form availability_form_rdetails" id="availabilityForm">
+        <label class="label-text label-text--black" for="checkIn">Check In</label>
+        <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="{{$checkin}}" required />
+        <label class="label-text label-text--black" for="checkOut">Check Out</label>
+        <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="{{$checkout}}" required />
+        <input class="button button_big button_big--gold button_text" type="submit" value="CHECK AVAILABILITY" />
+      </form>
     </div>
     @endif
-    <img class="room_image" src="{{$room['all_photos']}}" alt="room" />
+    @endif
   </div>
-
-  <!-- Availability -->
-  @if($checkin && $checkout)
-  <div class="availability--white">
-    <h2 class="availability-title">Check Availability</h2>
-    <form action="/room_details.php" method="POST" class="availability_form availability_form_rdetails" id="availabilityForm">
-      <label class="label-text label-text--black" for="checkIn">Check In</label>
-      <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="{{$checkin}}" readonly required />
-      <label class="label-text label-text--black" for="checkOut">Check Out</label>
-      <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="{{$checkout}}" readonly required />
-      <label class="label-text label-text--black" for="fullName">Full Name</label>
-      <input class="availability_input_rdetails" type="text" name="fullName" id="detailsFullName" placeholder="Type your name..." required />
-      <label class="label-text label-text--black" for="email">Email</label>
-      <input class="availability_input_rdetails" type="email" name="email" id="detailsEmail" placeholder="Type your email..." required />
-      <label class="label-text label-text--black" for="phone">Phone</label>
-      <input class="availability_input_rdetails" type="text" name="phone" id="detailsPhone" placeholder="Type your phone..." required />
-      <label class="label-text label-text--black" for="detailsMessage">Message (Special resquest)</label>
-      <textarea class="availability_text-area" name="message" id="detailsMessage" cols="30" rows="3" placeholder="Type your message..." required></textarea>
-      <input class="button button_big button_big--gold button_text" type="submit" value="BOOK NOW" />
-    </form>
-  </div>
-  @else
-  <div class="availability--white">
-    <h2 class="availability-title">Check Availability</h2>
-    <form action="/room_details.php" method="GET" class="availability_form availability_form_rdetails" id="availabilityForm">
-      <label class="label-text label-text--black" for="checkIn">Check In</label>
-      <input class="availability_input_rdetails" type="date" name="checkIn" id="detailsCheckIn" value="{{$checkin}}" required />
-      <label class="label-text label-text--black" for="checkOut">Check Out</label>
-      <input class="availability_input_rdetails" type="date" name="checkOut" id="detailsCheckOut" value="{{$checkout}}" required />
-      <input class="button button_big button_big--gold button_text" type="submit" value="CHECK AVAILABILITY" />
-    </form>
-  </div>
-  @endif
-  @endif
-  <p class="room-details-paragraph">
+  <p class="room-details-paragraph room-details-paragraph--out">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -170,9 +192,9 @@
     </p>
   </section>
   <section class="cancellation">
-    <h2 class="third-subtitle">Cancellation</h2>
+    <h2 class="third-subtitle cancellation-title">Cancellation</h2>
     <div class="room-details-bar"></div>
-    <p class="room-details-paragraph">
+    <p class="room-details-paragraph cancellation-paragraph">
       Phasellus volutpat neque a tellus venenatis, a euismod augue
       facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus.
       Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to
@@ -188,7 +210,6 @@
         @if (isset($relatedRooms))
         @foreach ($relatedRooms as $relatedRoom)
         <div class="swiper-slide swiper-slide-room-related">
-          <div>
             <div class="room_amenities room_amenities--down">
               @if (strpos($relatedRoom['all_amenities'], 'Extra Bed') !== false)
               <img src="./resources/icons/rooms/bed.svg" alt="bedIcon" />
@@ -212,7 +233,7 @@
               <img src="./resources/icons/rooms/cocktails.svg" alt="barIcon" />
               @endif
             </div>
-            <img src="{{$relatedRoom['all_photos']}}" alt="room" />
+            <img class="swiper-slide-room-related-img" src="{{$relatedRoom['all_photos']}}" alt="room" />
             <div class="room-container room-container--related">
               <div class="room-name">
                 <h4 class="third-subtitle room-subtitle-related">
@@ -237,8 +258,6 @@
                 </div>
               </div>
             </div>
-          </div>
-
         </div>@endforeach
         @else
         <p>No rooms available.</p>

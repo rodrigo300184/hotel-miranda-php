@@ -3,16 +3,20 @@
   max-width: 600px;
   margin: 70px auto 0px;
 }
-.rooms-details-container{
+.rooms-details-container {
   margin: 0 auto;
   width: fit-content;
+}
+.room-details-image {
+  width: 335px;
+  height: 223px;
 }
 
 .room-details-subtitle {
   font-size: 14px;
   margin-bottom: 12px;
   color: $grey;
-  &--gold{
+  &--gold {
     color: $gold;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -28,7 +32,7 @@
   line-height: 48px;
   letter-spacing: -1.44px;
   margin-bottom: 12px;
-  &--white{
+  &--white {
     text-align: center;
     color: $white;
   }
@@ -61,6 +65,12 @@
     height: 81px;
     width: 317px;
     text-align: center;
+  }
+  &--in {
+    display: none;
+  }
+  &--out {
+    display: block;
   }
 }
 
@@ -97,47 +107,47 @@
   width: 16px;
   height: 16px;
 
-  &-ac{
-    background-image: url('../icons/room_amenities/ac.svg');
+  &-ac {
+    background-image: url("../icons/room_amenities/ac.svg");
   }
-  &-breakfast{
-    background-image: url('../icons/room_amenities/breakfast.svg');
+  &-breakfast {
+    background-image: url("../icons/room_amenities/breakfast.svg");
   }
-  &-cleaning{
-    background-image: url('../icons/room_amenities/cleaning.svg');
+  &-cleaning {
+    background-image: url("../icons/room_amenities/cleaning.svg");
   }
-  &-grocery{
-    background-image: url('../icons/room_amenities/grocery.svg');
+  &-grocery {
+    background-image: url("../icons/room_amenities/grocery.svg");
   }
-  &-shop{
-    background-image: url('../icons/room_amenities/shop.svg');
+  &-shop {
+    background-image: url("../icons/room_amenities/shop.svg");
   }
-  &-support{
-    background-image: url('../icons/room_amenities/support.svg');
+  &-support {
+    background-image: url("../icons/room_amenities/support.svg");
   }
-  &-security{
-    background-image: url('../icons/room_amenities/security.svg');
+  &-security {
+    background-image: url("../icons/room_amenities/security.svg");
   }
-  &-wifi{
-    background-image: url('../icons/room_amenities/wifi.svg');
+  &-wifi {
+    background-image: url("../icons/room_amenities/wifi.svg");
   }
-  &-kitchen{
-    background-image: url('../icons/room_amenities/kitchen.svg');
+  &-kitchen {
+    background-image: url("../icons/room_amenities/kitchen.svg");
   }
-  &-shower{
-    background-image: url('../icons/room_amenities/shower.svg');
+  &-shower {
+    background-image: url("../icons/room_amenities/shower.svg");
   }
-  &-bed{
-    background-image: url('../icons/room_amenities/bed.svg');
+  &-bed {
+    background-image: url("../icons/room_amenities/bed.svg");
   }
-  &-towels{
-    background-image: url('../icons/room_amenities/towels.svg');
+  &-towels {
+    background-image: url("../icons/room_amenities/towels.svg");
   }
-  &-locker{
-    background-image: url('../icons/room_amenities/locker.svg');
+  &-locker {
+    background-image: url("../icons/room_amenities/locker.svg");
   }
-  &-expert{
-    background-image: url('../icons/room_amenities/expert.svg');
+  &-expert {
+    background-image: url("../icons/room_amenities/expert.svg");
   }
 }
 .amenities-text {
@@ -148,41 +158,102 @@
   font-weight: 500;
   line-height: normal;
 }
-.founder-card{
+.founder-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 60px 0px 41px;
-  &-avatar{
+  &-avatar {
     position: relative;
-    background-image: url('../icons/avatars/grey_ellipse.svg');
-    height: 150px;
-    width: 150px;
+    background-image: url("../icons/avatars/photo.jpeg");
+    background-size: cover;
+    background-position: -5px;
+    border-radius: 75px;
+    height: 155px;
+    width: 155px;
     margin-bottom: 38px;
-    &-circle{
+    &-circle {
       position: absolute;
       right: 0px;
     }
-    &-checkmark{
+    &-checkmark {
       position: absolute;
       right: 15px;
       top: 15px;
     }
   }
 }
-.cancellation{
+.cancellation {
   margin-top: 63px;
   margin-bottom: 101px;
 }
 
-.related-rooms{
+.related-rooms {
   margin-bottom: 0px;
 }
 
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width: 1000px) {
   .rooms-details {
-    max-width: 3000px;
+    padding: 45px 0 0;
+    max-width: 1200px;
   }
-  
+  .rooms-details-container {
+    width: 1200px;
+    display: flex;
+    gap: 70px;
+  }
+  .room-details-image {
+    width: 770px;
+    height: 490px;
+  }
+  .room-details-paragraph {
+    max-width: 770px;
+    &--in {
+      display: block;
+    }
+    &--out {
+      display: none;
+    }
+  }
+  .description-container {
+    display: flex;
+    position: relative;
+    top: 73px;
+    max-width: 730px;
+    min-height: 146px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 45px 0px 50px;
+    background-color: $white;
+  }
+  .room-luxury-title {
+    font-size: 48px;
+    margin: 0;
+  }
+  .room-details-form {
+    position: relative;
+    top: 63px;
+  }
+  .room-details-amenities {
+    max-width: 770px;
+    margin: 60px 0px;
+    padding: 0 0 30px 0;
+  }
+  .founder-card {
+    margin: 40px auto 86px;
+    max-width: 370px;
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.27);
+  }
+  .cancellation {
+    margin-top: 63px;
+    max-width: 1200px;
+  }
+  .cancellation-paragraph{
+    margin: 0;
+    max-width: 664px;
+  }
+  .related-rooms{
+    max-width: 1200px;
+  }
 }

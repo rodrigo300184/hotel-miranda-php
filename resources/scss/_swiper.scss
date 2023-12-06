@@ -34,9 +34,9 @@
     height: 100%; /* Imágenes se ajustan a la altura del contenedor */
     max-height: 223px;
   }
-  &-room-related img {
+  &-room-related-img {
     width: 100%; /* Imágenes se ajustan al ancho del contenedor */
-    height: 100%; /* Imágenes se ajustan a la altura del contenedor */
+    height: 223px; /* Imágenes se ajustan a la altura del contenedor */
     max-height: 223px;
   }
   &--dark {
@@ -227,6 +227,7 @@
 .rooms-related-swiper {
   top: -60px;
   position: relative;
+  width: 100%;
   max-width: 375px;
   overflow: hidden;
 

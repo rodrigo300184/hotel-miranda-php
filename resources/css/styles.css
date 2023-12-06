@@ -32,10 +32,10 @@
   height: 100%;
   /* Imágenes se ajustan a la altura del contenedor */
   max-height: 223px; }
-.swiper-slide-room-related img {
+.swiper-slide-room-related-img {
   width: 100%;
   /* Imágenes se ajustan al ancho del contenedor */
-  height: 100%;
+  height: 223px;
   /* Imágenes se ajustan a la altura del contenedor */
   max-height: 223px; }
 .swiper-slide--dark {
@@ -196,6 +196,7 @@
 .rooms-related-swiper {
   top: -60px;
   position: relative;
+  width: 100%;
   max-width: 375px;
   overflow: hidden; }
   .rooms-related-swiper-btn-next {
@@ -447,6 +448,10 @@ body {
   margin: 0 auto;
   width: fit-content; }
 
+.room-details-image {
+  width: 335px;
+  height: 223px; }
+
 .room-details-subtitle {
   font-size: 14px;
   margin-bottom: 12px;
@@ -496,6 +501,10 @@ body {
     height: 81px;
     width: 317px;
     text-align: center; }
+  .room-details-paragraph--in {
+    display: none; }
+  .room-details-paragraph--out {
+    display: block; }
 
 .room-details-amenities {
   padding: 12px 20px 17px;
@@ -569,9 +578,12 @@ body {
   padding: 60px 0px 41px; }
   .founder-card-avatar {
     position: relative;
-    background-image: url("../icons/avatars/grey_ellipse.svg");
-    height: 150px;
-    width: 150px;
+    background-image: url("../icons/avatars/photo.jpeg");
+    background-size: cover;
+    background-position: -5px;
+    border-radius: 75px;
+    height: 155px;
+    width: 155px;
     margin-bottom: 38px; }
     .founder-card-avatar-circle {
       position: absolute;
@@ -590,7 +602,64 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .rooms-details {
-    max-width: 3000px; } }
+    padding: 45px 0 0;
+    max-width: 1200px; }
+
+  .rooms-details-container {
+    width: 1200px;
+    display: flex;
+    gap: 70px; }
+
+  .room-details-image {
+    width: 770px;
+    height: 490px; }
+
+  .room-details-paragraph {
+    max-width: 770px; }
+    .room-details-paragraph--in {
+      display: block; }
+    .room-details-paragraph--out {
+      display: none; }
+
+  .description-container {
+    display: flex;
+    position: relative;
+    top: 73px;
+    max-width: 730px;
+    min-height: 146px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 45px 0px 50px;
+    background-color: #fff; }
+
+  .room-luxury-title {
+    font-size: 48px;
+    margin: 0; }
+
+  .room-details-form {
+    position: relative;
+    top: 63px; }
+
+  .room-details-amenities {
+    max-width: 770px;
+    margin: 60px 0px;
+    padding: 0 0 30px 0; }
+
+  .founder-card {
+    margin: 40px auto 86px;
+    max-width: 370px;
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.27); }
+
+  .cancellation {
+    margin-top: 63px;
+    max-width: 1200px; }
+
+  .cancellation-paragraph {
+    margin: 0;
+    max-width: 664px; }
+
+  .related-rooms {
+    max-width: 1200px; } }
 .offers-title {
   padding-bottom: 20px; }
 
@@ -1576,7 +1645,7 @@ header {
   border-bottom: 37px solid #111111; }
   .room_offer_title_related {
     top: -231px;
-    left: -82px; }
+    left: -57px; }
 
 @media only screen and (min-width: 1000px) {
   .room-container {
@@ -1606,7 +1675,10 @@ header {
     border-bottom: 37px solid #111111; }
     .room_offer_title_related {
       top: -231px;
-      left: -82px; } }
+      left: -82px; }
+
+  .room-price-left {
+    margin-bottom: 0px; } }
 .video-section {
   margin: 0 auto;
   max-width: 600px;
