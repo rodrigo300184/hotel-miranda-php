@@ -1660,6 +1660,10 @@ header {
   font-weight: 400;
   line-height: 24px;
   min-height: 72px; }
+  .room-description-big {
+    min-height: 48px; }
+  .room-description-related {
+    min-height: 72px; }
 
 .room-price {
   color: #bead8e;
@@ -1720,7 +1724,7 @@ header {
     max-height: 180px;
     width: 690px; }
     .room-container--related {
-      width: 300px;
+      width: 375px;
       height: 250px;
       max-height: 250px; }
     .room-container--shadow {

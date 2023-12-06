@@ -119,7 +119,7 @@
         <div class="room-container room-container--shadow">
           <div class="room-name">
             <h4 class="third-subtitle room-subtitle">{{$room['room_type']}}</h4>
-            <p class="room-description">
+            <p class="room-description room-description-big">
               {{$room['description']}}
             </p>
             <div class="room-price">

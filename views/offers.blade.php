@@ -144,7 +144,7 @@
                             <h4 class="third-subtitle room-subtitle-related">
                                 {{$popularRoom['room_type']}}
                             </h4>
-                            <p class="room-description">
+                            <p class="room-description room-description-related">
                                 {{$popularRoom['description']}}
                             </p>
                             <div class="room-price">
