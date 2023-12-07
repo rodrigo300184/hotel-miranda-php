@@ -64,11 +64,11 @@
  ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
  </p>
  <div class="footer-socials">
- <a href="https://www.facebook.com/" class="footer-socials-facebook"></a>
- <a href="https://twitter.com/" class="footer-socials-twitter"></a>
- <a href="https://www.behance.net/" class="footer-socials-behace"></a>
- <a href="https://www.linkedin.com/" class="footer-socials-linkedin"></a>
- <a href="https://www.youtube.com/" class="footer-socials-youtube"></a>
+ <a href="https://www.facebook.com/" class="footer-socials-link"><div class="socials socials-facebook"></div></a>
+ <a href="https://twitter.com/" class="footer-socials-link"><div class="socials socials-twitter"></div></a>
+ <a href="https://www.behance.net/" class="footer-socials-link"><div class="socials socials-behance"></div></a>
+ <a href="https://www.linkedin.com/" class="footer-socials-link"><div class="socials socials-linkedin"></div></a>
+ <a href="https://www.youtube.com/" class="footer-socials-link"><div class="socials socials-youtube"></div></a>
  </div>
  </div>
  <div class="footer-container_second">

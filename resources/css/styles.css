@@ -387,18 +387,30 @@ body {
       background-color: #bead8e; }
     .button_small--transparent {
       border: 2px solid rgba(255, 255, 255, 0.33); }
+    .button_small:hover {
+      transform: scale(1.015);
+      box-shadow: 0px 14px 14px 0px #111111;
+      transition: all 200ms; }
   .button_regular {
     width: 250px; }
     .button_regular--gold {
       background-color: #bead8e; }
     .button_regular--transparent {
       border: 2px solid rgba(255, 255, 255, 0.33); }
+    .button_regular:hover {
+      transform: scale(1.015);
+      box-shadow: 0px 14px 14px 0px #111111;
+      transition: all 200ms; }
   .button_big {
     width: 290px; }
     .button_big--gold {
       background-color: #bead8e; }
     .button_big--transparent {
       border: 2px solid rgba(255, 255, 255, 0.33); }
+    .button_big:hover {
+      transform: scale(1.015);
+      box-shadow: 0px 14px 14px 0px #111111;
+      transition: all 200ms; }
   .button_text {
     font-family: Archivo;
     color: #fff;
@@ -1403,6 +1415,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .availability {
+    margin: 0px auto;
     max-width: 3000px;
     padding: 37px 10% 40px; }
     .availability--white {
@@ -2216,6 +2229,10 @@ body {
         line-height: normal;
         letter-spacing: 2.6px;
         text-transform: uppercase; }
+  .footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px; }
   .footer-paragraph {
     position: relative;
     top: -9px;
@@ -2226,28 +2243,6 @@ body {
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 32px; }
-  .footer a {
-    height: 40px;
-    width: 40px;
-    background-color: #f8f8f8;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 32px; }
-  .footer a:hover {
-    background-color: #bead8e; }
-  .footer-socials {
-    display: flex;
-    gap: 10px; }
-    .footer-socials-facebook {
-      background-image: url("../icons/footer/facebook.svg"); }
-    .footer-socials-twitter {
-      background-image: url("../icons/footer/twitter.svg"); }
-    .footer-socials-behace {
-      background-image: url("../icons/footer/behance.svg"); }
-    .footer-socials-linkedin {
-      background-image: url("../icons/footer/linkedin.svg"); }
-    .footer-socials-youtube {
-      background-image: url("../icons/footer/youtube.svg"); }
   .footer-subtitle {
     color: #111111;
     font-family: Old Standard TT, sans-serif;
@@ -2309,6 +2304,73 @@ body {
     .footer-end-copyright {
       margin-bottom: 24px; }
 
+.footer-socials-link {
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+  /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center; }
+
+.footer-socials-link:before,
+.footer-socials-link:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  background-color: #bead8e;
+  /* color de fondo hover */
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.footer-socials-link:after {
+  left: 100%; }
+
+.footer-socials-link:hover {
+  transition: all 200ms;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 4px 0px #111111; }
+
+.footer-socials-link:hover:before {
+  left: 0; }
+
+.footer-socials-link:hover:after {
+  left: 50%; }
+
+.socials {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .socials-facebook {
+    background-image: url("../icons/footer/facebook.svg");
+    height: 24px;
+    width: 24px; }
+  .socials-twitter {
+    background-image: url("../icons/footer/twitter.svg");
+    height: 24px;
+    width: 24px; }
+  .socials-behance {
+    background-image: url("../icons/footer/behance.svg");
+    height: 24px;
+    width: 24px; }
+  .socials-linkedin {
+    background-image: url("../icons/footer/linkedin.svg");
+    height: 24px;
+    width: 24px; }
+  .socials-youtube {
+    background-image: url("../icons/footer/youtube.svg");
+    height: 24px;
+    width: 24px; }
+
 @media only screen and (min-width: 1000px) {
   .footer {
     max-width: 3000px; }
@@ -2327,6 +2389,8 @@ body {
       height: 80px;
       gap: 30%; }
       .footer-end-copyright {
-        margin-bottom: 0px; } }
+        margin-bottom: 0px; }
+    .footer-socials {
+      margin: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
