@@ -61,6 +61,11 @@
   &--room {
     top: auto;
   }
+  &:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px 0px $black;
+    transition: all 200ms;
+  }
 }
 .swiper-btn-next {
   position: absolute;
@@ -78,6 +83,11 @@
   &--room {
     top: auto;
   }
+  &:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px 0px $black;
+    transition: all 200ms;
+  }
 }
 .menu-swiper {
   overflow: hidden;
@@ -94,6 +104,11 @@
   background-color: #f8f8f8;
   background-image: url("../icons/swiper/arrow_left\ .svg");
   z-index: 1;
+  &:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px 0px $black;
+    transition: all 200ms;
+  }
 }
 .menu-swiper-btn-next {
   position: absolute;
@@ -107,6 +122,11 @@
   background-color: $gold;
   background-image: url("../icons/swiper/arrow_rigth.svg");
   z-index: 1;
+  &:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px 0px $black;
+    transition: all 200ms;
+  }
 }
 
 .food-images-swiper {
