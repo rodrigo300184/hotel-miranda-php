@@ -43,7 +43,6 @@ const facilitiesSwiper = new Swiper(".facilities-swiper", {
 
 const menuSwiper = new Swiper(".menu-swiper", {
   spaceBetween: 20,
-  loop: true,
   grid: {
     fill: "row",
     rows: 3,
@@ -71,7 +70,6 @@ const menuSwiper = new Swiper(".menu-swiper", {
 const foodImageSwiper = new Swiper(".food-images-swiper", {
   slidesPerView: 1,
   spaceBetween: 25,
-  loop: true,
   autoplay: {
     delay: 5000,
   },
@@ -91,7 +89,6 @@ const factsSwiper = new Swiper(".facts-swiper", {
   direction: "horizontal",
   slidesPerView: 1,
   spaceBetween: 16,
-  loop: true,
   autoplay: {
     delay: 2000,
   },

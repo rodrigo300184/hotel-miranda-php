@@ -863,20 +863,20 @@ body {
   .contact_input:focus {
     outline: none; }
   .contact_input_name {
-    background-image: url("../icons/contact/friend_human.svg"); }
+    background-image: url("/resources/icons/contact/friend_human.svg"); }
   .contact_input_phone {
-    background-image: url("../icons/contact/phone_cell.svg"); }
+    background-image: url("/resources/icons/contact/phone_cell.svg"); }
   .contact_input_email {
-    background-image: url("../icons/contact/email_envelope.svg"); }
+    background-image: url("/resources/icons/contact/email_envelope.svg"); }
   .contact_input_subject {
-    background-image: url("../icons/contact/gobbler.svg"); }
+    background-image: url("/resources/icons/contact/gobbler.svg"); }
 
 .contact_text-area {
   margin-bottom: 10px;
   border: none;
   outline: none;
   background-color: #f8f8f8;
-  background-image: url("../icons/contact/pen_pencil.svg");
+  background-image: url("/resources/icons/contact/pen_pencil.svg");
   background-repeat: no-repeat;
   background-position: 20px 15px;
   font: normal 400 26px/28.3px "Archivo", sans-serif;
@@ -908,11 +908,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat; }
     .contact_card_icon--address {
-      background-image: url("../icons/contact/card_address.svg"); }
+      background-image: url("/resources/icons/contact/card_address.svg"); }
     .contact_card_icon--phone {
-      background-image: url("../icons/contact/card_phone.svg"); }
+      background-image: url("/resources/icons/contact/card_phone.svg"); }
     .contact_card_icon--email {
-      background-image: url("../icons/contact/card_email.svg"); }
+      background-image: url("/resources/icons/contact/card_email.svg"); }
   .contact_card_text-container {
     z-index: 1;
     width: 200px;
