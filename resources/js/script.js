@@ -15,13 +15,39 @@ function dropdown_menu_adjust() {
   if (window.innerWidth < 1000) {
     menu.classList.remove("header_menu--active");
     navbar.classList.remove("navbar--active");
-  } 
+    menu.classList.remove("header_menu--disabled");
+  } else {
+    menu.classList.add("header_menu--disabled");
+  }
 }
 
 if (window.innerWidth < 1000) {
+  menu.classList.remove("header_menu--disabled");
   document
     .getElementById("navbar")
     .addEventListener("click", () => setTimeout(dropdown_menu_adjust, 300));
+} else {
+  menu.classList.add("header_menu--disabled");
 }
 
+/*----------Desktop Menu----------*/ 
 
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.scrollY;
+  if (currentScrollPos >= 160 && window.innerWidth > 999) {
+    header.classList.add("header--hidden");
+  } else {
+    header.classList.remove("header--hidden");
+  }
+});
+
+window.addEventListener("mousemove", (event) => {
+  const currentScrollPos = window.scrollY;
+  if (event.clientY < 35 && currentScrollPos > 150 && window.innerWidth > 999) {
+    header.classList.add("header--float");
+  } else if (event.clientY > 210 && window.innerWidth > 999) {
+    header.classList.remove("header--float");
+  }
+});

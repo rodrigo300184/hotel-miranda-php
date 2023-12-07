@@ -21,7 +21,8 @@
 </head>
 
 <body>
-    <header id="header">
+    <div class="header-desktop-title">We Make Your Feel Comfortable</div>
+    <header class="header" id="header">
         <div class="header_left">
             <div class="header_menu" id="header_menu"></div>
             <a href="./index.php" class="header_letterhead">
