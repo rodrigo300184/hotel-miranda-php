@@ -23,11 +23,11 @@
   <form action="/rooms.php" method="GET" class="availability_form">
     <div class="availability_item">
       <label class="label-text" for="arrivalDate">Arrival Date</label>
-      <input class="availability_input" id="arrivalDate" name="arrivalDate" type="date" required />
+      <input class="availability_input" id="arrivalDate" name="arrivalDate" type="date" value="{{ date('Y-m-d') }}" min="{{ date('Y-m-d') }}" max="{{ date('Y-m-d', strtotime('+2 Year')) }}" required />
     </div>
     <div class="availability_item availability_item_left-margin">
       <label class="label-text" for="departureDate">Departure Date</label>
-      <input class="availability_input" id="departureDate" name="departureDate" type="date" required />
+      <input class="availability_input" id="departureDate" name="departureDate" type="date" value="{{ date('Y-m-d', strtotime('+1 day')) }}" min="{{ date('Y-m-d', strtotime('+1 day')) }}" max="{{ date('Y-m-d', strtotime('+2 Year')) }}" required />
     </div>
     <button type="submit" class="button button_regular button_regular--gold button_text button-hover-black">
       CHECK AVAILABILITY
