@@ -118,6 +118,9 @@
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  &:hover{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .room_image {

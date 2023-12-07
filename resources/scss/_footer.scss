@@ -101,6 +101,11 @@
   &-contact {
     display: flex;
     gap: 20px;
+    transition: all 300ms;
+    &:hover{
+      transition: all 300ms;
+      transform: scale(1.2);
+    }
     &-data {
       display: flex;
       flex-direction: column;

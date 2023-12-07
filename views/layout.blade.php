@@ -40,7 +40,8 @@
                 <a class="navbar_a" href="/about.php">About Us</a>
             </li>
             <li class="navbar_li">
-                <a class="navbar_a" href="/rooms.php">Rooms</a></li>
+                <a class="navbar_a" href="/rooms.php">Rooms</a>
+            </li>
             <li class="navbar_li">
                 <a class="navbar_a" href="/offers.php">Offers</a>
             </li>
@@ -65,11 +66,21 @@
                         ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
                     </p>
                     <div class="footer-socials">
-                        <a href="https://www.facebook.com/" class="footer-socials-link"><div class="socials socials-facebook"></div></a>
-                        <a href="https://twitter.com/" class="footer-socials-link"><div class="socials socials-twitter"></div></a>
-                        <a href="https://www.behance.net/" class="footer-socials-link"><div class="socials socials-behance"></div></a>
-                        <a href="https://www.linkedin.com/" class="footer-socials-link"><div class="socials socials-linkedin"></div></a>
-                        <a href="https://www.youtube.com/" class="footer-socials-link"><div class="socials socials-youtube"></div></a>
+                        <a href="https://www.facebook.com/" class="footer-socials-link">
+                            <div class="socials socials-facebook"></div>
+                        </a>
+                        <a href="https://twitter.com/" class="footer-socials-link">
+                            <div class="socials socials-twitter"></div>
+                        </a>
+                        <a href="https://www.behance.net/" class="footer-socials-link">
+                            <div class="socials socials-behance"></div>
+                        </a>
+                        <a href="https://www.linkedin.com/" class="footer-socials-link">
+                            <div class="socials socials-linkedin"></div>
+                        </a>
+                        <a href="https://www.youtube.com/" class="footer-socials-link">
+                            <div class="socials socials-youtube"></div>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-container_second">
@@ -96,19 +107,23 @@
                     <div class="footer-contact-data">
                         <div class="footer-contact">
                             <img class="footer-contact-icons" src="./resources/icons/footer/telephone.svg" alt="" />
-                            <div>
-                                <h4 class="footer-contact-title">Phone Number</h4>
-                                <p class="footer-contact-subtitle">+347 876 765 76 577</p>
-                            </div>
+                            <a href="tel:+347 876 765 76 577 ">
+                                <div>
+                                    <h4 class="footer-contact-title">Phone Number</h4>
+                                    <p class="footer-contact-subtitle">+347 876 765 76 577</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="footer-contact">
                             <img class="footer-contact-icons" src="./resources/icons/footer/email.svg" alt="" />
-                            <div>
-                                <h4 class="footer-contact-title">Email</h4>
-                                <p class="footer-contact-subtitle">
-                                    rodrigomartinez.correo@gmail.com
-                                </p>
-                            </div>
+                            <a href="mailto: rodrigomartinez.correo@gmail.com">
+                                <div>
+                                    <h4 class="footer-contact-title">Email</h4>
+                                    <p class="footer-contact-subtitle">
+                                        rodrigomartinez.correo@gmail.com
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                         <div class="footer-contact">
                             <img class="footer-contact-icons" src="./resources/icons/footer/location.svg" alt="" />
