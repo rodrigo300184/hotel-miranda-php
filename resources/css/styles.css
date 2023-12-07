@@ -1240,7 +1240,16 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 300ms; }
+  .navbar_a--active {
+    border-bottom: 2px solid #bead8e;
+    color: #bead8e;
+    font-size: 18px; }
+  .navbar_a:hover {
+    transition: all 200ms;
+    color: #bead8e;
+    font-size: 17px; }
 
 @media only screen and (min-width: 1000px) {
   .header-desktop-title {

@@ -37,14 +37,15 @@
 
  <ul id="navbar" class="navbar">
  <li class="navbar_li">
- <a class="navbar_a" href="./about.php">About Us</a>
- </li>
- <li class="navbar_li"><a class="navbar_a" href="./rooms.php">Rooms</a></li>
- <li class="navbar_li">
- <a class="navbar_a" href="./offers.php">Offers</a>
+ <a class="navbar_a" href="/about.php">About Us</a>
  </li>
  <li class="navbar_li">
- <a class="navbar_a" href="./contact.php">Contact</a>
+ <a class="navbar_a" href="/rooms.php">Rooms</a></li>
+ <li class="navbar_li">
+ <a class="navbar_a" href="/offers.php">Offers</a>
+ </li>
+ <li class="navbar_li">
+ <a class="navbar_a" href="/contact.php">Contact</a>
  </li>
  </ul>
  </header>

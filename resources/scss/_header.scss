@@ -119,6 +119,17 @@
 .navbar_a {
   @include navbar-titles;
   text-decoration: none;
+  transition: all 300ms;
+  &--active {
+    border-bottom: 2px solid $gold;
+    color: $gold;
+    font-size: 18px;
+  }
+  &:hover{
+    transition: all 200ms;
+    color: $gold;
+    font-size: 17px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {

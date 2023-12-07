@@ -51,3 +51,18 @@ window.addEventListener("mousemove", (event) => {
     header.classList.remove("header--float");
   }
 });
+
+/*----------Active Navbar links----------*/ 
+
+document.addEventListener("DOMContentLoaded", function() {
+ 
+  const path = window.location.pathname;
+  console.log(path);
+  const links = document.querySelectorAll(".navbar_a");
+  console.log(links);
+  links.forEach(link => {
+    if (link.getAttribute("href") === path) {
+      link.classList.add("navbar_a--active");
+    }
+  });
+});
