@@ -31,8 +31,8 @@
             </a>
         </div>
         <div class="header_right">
-            <div class="header_member-icon"></div>
-            <div class="header_magnifier-icon"></div>
+            <a href="/contact.php"><div class="header_member-icon"></div></a>
+            <a href="/rooms.php"><div class="header_magnifier-icon"></div></a>
         </div>
 
         <ul id="navbar" class="navbar">

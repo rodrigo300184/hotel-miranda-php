@@ -85,7 +85,12 @@
   background-image: url("../icons/header/header-search-magnifier.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 300ms;
   cursor: pointer;
+  &:hover{
+    transition: all 300ms;
+    transform: scale(1.2);
+  }
 }
 
 .header_member-icon {
@@ -95,6 +100,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+  transition: all 300ms;
+  &:hover{
+    transition: all 300ms;
+    transform: scale(1.2);
+  }
 }
 
 .navbar {
