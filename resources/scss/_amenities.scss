@@ -15,6 +15,7 @@
       gap: 12px;
       height: 158px;
       width: 158px;
+      transition: all 500ms;
 
       &-breakfast {
         height: 58px;
@@ -49,6 +50,7 @@
         letter-spacing: 2.4px;
       }
       &:hover {
+        transition: all 500ms;
         background-color: $gold;
         .amenities_container_item-breakfast {
           filter: brightness(100);

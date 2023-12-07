@@ -29,8 +29,8 @@
  <label class="label-text" for="departureDate">Departure Date</label>
  <input class="availability_input" id="departureDate" name="departureDate" type="date" required />
  </div>
- <button type="submit" class="button button_regular button_regular--gold">
- <div class="button_text">CHECK AVAILABILITY</div>
+ <button type="submit" class="button button_regular button_regular--gold button_text button-hover-black">
+ CHECK AVAILABILITY
  </button>
  </form>
 </section>
@@ -156,7 +156,7 @@
  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
  commodo consequat you have to understand this.
  </p>
- <a href="/rooms.php" class="button button_small button_small--gold video-button--in">
+ <a href="/rooms.php" class="button button_small button_small--gold video-button--in button-hover-black">
  <div class="button_text">BOOK NOW</div>
  </a>
  </div>
@@ -164,7 +164,7 @@
  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Bu3Doe45lcU?si=_OomfvosXdgaSATd&amp;start=25&end=80;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  </div>
  </div>
- <a href="/rooms.php" class="button button_small button_small--gold video-button--out">
+ <a href="/rooms.php" class="button button_small button_small--gold video-button--out button-hover-black">
  <div class="button_text">BOOK NOW</div>
  </a>
 </section>

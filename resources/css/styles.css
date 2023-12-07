@@ -396,7 +396,8 @@ body {
   flex-shrink: 0;
   height: 60px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 200ms; }
   .button_small {
     width: 217px; }
     .button_small--gold {
@@ -415,7 +416,7 @@ body {
       border: 2px solid rgba(255, 255, 255, 0.33); }
     .button_regular:hover {
       transform: scale(1.015);
-      box-shadow: 0px 14px 14px 0px #111111;
+      box-shadow: 0px 10px 10px 0px #111111;
       transition: all 200ms; }
   .button_big {
     width: 290px; }
@@ -438,6 +439,11 @@ body {
     text-transform: uppercase; }
   .button_centered {
     margin: 0 auto; }
+
+.button-hover-black:hover {
+  transform: scale(1.015);
+  box-shadow: 0px 10px 10px 0px #686868;
+  transition: all 200ms; }
 
 .breadcrumb {
   font-family: Archivo, sans-serif;
@@ -1047,7 +1053,8 @@ body {
       justify-content: center;
       gap: 12px;
       height: 158px;
-      width: 158px; }
+      width: 158px;
+      transition: all 500ms; }
       .amenities_container_item-breakfast {
         height: 58px;
         width: 50px; }
@@ -1075,6 +1082,7 @@ body {
         line-height: 14px;
         letter-spacing: 2.4px; }
       .amenities_container_item:hover {
+        transition: all 500ms;
         background-color: #bead8e; }
         .amenities_container_item:hover .amenities_container_item-breakfast {
           filter: brightness(100); }
@@ -1315,6 +1323,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .banner {
+    padding-top: 100px;
     max-width: 3000px;
     top: 0; } }
 .availability {
