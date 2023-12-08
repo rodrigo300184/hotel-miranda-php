@@ -31,8 +31,12 @@
             </a>
         </div>
         <div class="header_right">
-            <a href="/contact.php"><div class="header_member-icon"></div></a>
-            <a href="/rooms.php"><div class="header_magnifier-icon"></div></a>
+            <a href="/contact.php">
+                <div class="header_member-icon"></div>
+            </a>
+            <a href="/rooms.php">
+                <div class="header_magnifier-icon"></div>
+            </a>
         </div>
 
         <ul id="navbar" class="navbar">
@@ -147,7 +151,7 @@
     <script>
         Toastify({
             text: "{{$notification['message']}}",
-            duration: 5000,
+            duration: 4000,
             newWindow: true,
             close: true,
             gravity: "top",
@@ -155,11 +159,18 @@
             stopOnFocus: true,
             style: {
                 background: "{{$notification['error']}}" ? "red" : "#bead8e",
-                width: "150px",
+                width: "320px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
                 top: "39px",
+                fontFamily: 'Archivo',
+                color: '#fff',
+                fontSize: '13px',
+                textTransform: 'uppercase',
+                fontWeight: '700',
+                lineHeight: '18px',
+                letterSpacing: '2.8px',
             },
         }).showToast();
     </script>
