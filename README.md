@@ -9,7 +9,7 @@
 <br>
 ¡Bienvenido a Miranda-Hotel! Página web totalmente responsive (por ahora versión mobile). En la página puedes interactuar con diferentes funcionalidades y sliders de imagenes.
 
-**Enlace a la aplicación en vivo: [Miranda Hotel](https://miranda-hotel-git-main-rodrigo-martinezs-projects.vercel.app/)**
+**Enlace a la aplicación en vivo: [Miranda Hotel](http://13.38.94.41/index.php)**
 
 ## Descripción
 
@@ -32,8 +32,8 @@ Miranda Hotel es una página web diseñada y desarrollada desde cero utilizando 
 Para ejecutar la aplicación localmente, simplemente clona este repositorio y abre el archivo `index.html` en tu navegador web.
 
 ```bash
-git clone https://github.com/rodrigo300184/Miranda-Hotel.git
-cd Miranda-Hotel
+git clone https://github.com/rodrigo300184/hotel-miranda-php
+cd hotel-miranda-php
 
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ cd Miranda-Hotel
 <br>
 Welcome to Miranda-Hotel! A fully responsive web page (currently in mobile version). On the page, you can interact with different functionalities and image sliders.
 
-**Link to the live application: [Miranda Hotel](https://miranda-hotel-git-main-rodrigo-martinezs-projects.vercel.app/)**
+**Link to the live application: [Miranda Hotel](http://13.38.94.41/index.php)**
 
 ## Description
 
@@ -68,10 +68,10 @@ Miranda Hotel is a web page designed and developed from scratch using fundamenta
 
 ## Usage
 
-To run the application locally, simply clone this repository and open the `index.html` file in your web browser.
+To run the application locally, simply clone this repository.
 
 ```bash
-git clone https://github.com/rodrigo300184/Miranda-Hotel.git
-cd Miranda-Hotel
+git clone https://github.com/rodrigo300184/hotel-miranda-php
+cd hotel-miranda-php
 
 ```
