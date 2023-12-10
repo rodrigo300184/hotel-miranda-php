@@ -1429,6 +1429,7 @@ body {
   line-height: normal;
   border: none;
   padding: 15px 22px 15px 30px;
+  width: 100%;
   max-width: 290px;
   background: #f8f8f8;
   position: relative;
@@ -2305,11 +2306,11 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 80px; }
+    gap: 70px; }
   .footer ul {
     color: #777777;
     font-family: Roboto, serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 48px;
