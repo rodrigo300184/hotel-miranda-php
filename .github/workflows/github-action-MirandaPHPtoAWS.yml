@@ -12,7 +12,7 @@ jobs:
         with:
           SCRIPT_BEFORE: “sudo chown -R ubuntu:ubuntu /var/www/hotel-miranda-php/”
           SCRIPT_AFTER: “sudo chown -R www-data:www-data /var/www/hotel-miranda-php/”
-          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY1 }}
+          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           REMOTE_HOST: “ec2-13-38-94-41.eu-west-3.compute.amazonaws.com”
           REMOTE_USER: “ubuntu”
           TARGET: “/var/www/hotel-miranda-php/”
