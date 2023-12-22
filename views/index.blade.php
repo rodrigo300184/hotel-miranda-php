@@ -5,7 +5,7 @@
 
 <!-- Banner Section -->
 <section class="banner">
-  <h2 class="banner-subtitle subtitle">THE ULTIMATE DAVID EXPERIENCE</h2>
+  <h2 class="banner-subtitle subtitle">THE ULTIMATE LUXURY EXPERIENCE</h2>
   <h1 class="banner-main-title main-title main-title-white main-title main-title-white--big">
     The Perfect Base For You
   </h1>
