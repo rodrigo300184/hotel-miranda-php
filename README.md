@@ -7,7 +7,7 @@
   <img src="https://github.com/rodrigo300184/Miranda-Hotel/blob/59524023b6205eb73135f6f4a9c4f3e7398941c0/resources/assets/readme/4.png" alt="Preview 4" width="200">
 </div>
 <br>
-¡Bienvenido a Miranda-Hotel! Página web totalmente responsive (por ahora versión mobile). En la página puedes interactuar con diferentes funcionalidades y sliders de imagenes.
+¡Bienvenido a Miranda-Hotel! Página web totalmente responsive. En la página puedes interactuar con diferentes funcionalidades y sliders de imagenes.
 
 **Enlace a la aplicación en vivo: [Miranda Hotel](http://13.38.94.41/index.php)**
 
@@ -46,7 +46,7 @@ cd hotel-miranda-php
   <img src="https://github.com/rodrigo300184/Miranda-Hotel/blob/59524023b6205eb73135f6f4a9c4f3e7398941c0/resources/assets/readme/4.png" alt="Preview 4" width="200">
 </div>
 <br>
-Welcome to Miranda-Hotel! A fully responsive web page (currently in mobile version). On the page, you can interact with different functionalities and image sliders.
+Welcome to Miranda-Hotel! A fully responsive web page. On the page, you can interact with different functionalities and image sliders.
 
 **Link to the live application: [Miranda Hotel](http://13.38.94.41/index.php)**
 
