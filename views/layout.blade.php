@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="header-desktop-title">We Make Your Feel Comfortable</div>
+    <div class="header-desktop-title">We Make You Feel Comfortable</div>
     <header class="header" id="header">
         <div class="header_left">
             <div class="header_menu" id="header_menu"></div>
