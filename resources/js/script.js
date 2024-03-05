@@ -12,7 +12,7 @@ function dropdown_menu() {
 window.addEventListener("resize", dropdown_menu_adjust);
 
 function dropdown_menu_adjust() {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 1235) {
     menu.classList.remove("header_menu--active");
     navbar.classList.remove("navbar--active");
     menu.classList.remove("header_menu--disabled");
@@ -21,7 +21,7 @@ function dropdown_menu_adjust() {
   }
 }
 
-if (window.innerWidth < 1000) {
+if (window.innerWidth < 1235) {
   menu.classList.remove("header_menu--disabled");
   document
     .getElementById("navbar")
