@@ -57,9 +57,7 @@ window.addEventListener("mousemove", (event) => {
 document.addEventListener("DOMContentLoaded", function() {
  
   const path = window.location.pathname;
-  console.log(path);
   const links = document.querySelectorAll(".navbar_a");
-  console.log(links);
   links.forEach(link => {
     if (link.getAttribute("href") === path) {
       link.classList.add("navbar_a--active");
