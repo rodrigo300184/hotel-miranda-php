@@ -9,7 +9,7 @@
 <br>
 ¡Bienvenido a Miranda-Hotel! Página web totalmente responsive. En la página puedes interactuar con diferentes funcionalidades y sliders de imagenes.
 
-**Enlace a la aplicación en vivo: [Miranda Hotel](http://13.38.94.41/index.php)**
+**Enlace a la aplicación en vivo: [Miranda Hotel](https://hotel-miranda.rf.gd/)**
 
 ## Descripción
 
@@ -48,7 +48,7 @@ cd hotel-miranda-php
 <br>
 Welcome to Miranda-Hotel! A fully responsive web page. On the page, you can interact with different functionalities and image sliders.
 
-**Link to the live application: [Miranda Hotel](http://13.38.94.41/index.php)**
+**Link to the live application: [Miranda Hotel](https://hotel-miranda.rf.gd/)**
 
 ## Description
 
